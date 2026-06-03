@@ -12,18 +12,23 @@ OUTPUT = Path(__file__).parent.parent / "data" / "schemes_cleaned.json"
 
 CITE_PATTERN = re.compile(r'\[cite:\s*\d+\]')
 
-
 def clean_value(v):
     if isinstance(v, str):
+        # 1. Remove citations:
         v = CITE_PATTERN.sub('', v)
+        
+        # 2. NEW: Remove broken markdown images: ![image alt text](http://link...)
+        v = re.sub(r'!\[[^\]]*\]\([^)]+\)', '', v)
+        
+        # 3. Clean up extra spaces caused by deletions
         v = re.sub(r'\s{2,}', ' ', v).strip()
         return v
+        
     if isinstance(v, dict):
         return {k: clean_value(val) for k, val in v.items()}
     if isinstance(v, list):
         return [clean_value(item) for item in v]
     return v
-
 
 def clean_scheme(scheme):
     return {k: clean_value(v) for k, v in scheme.items()}
@@ -54,3 +59,6 @@ if __name__ == "__main__":
     print(f"✅ Cleaned {len(cleaned)} schemes.")
     print(f"   Found citations in {count} top-level + {nested_count} nested string fields.")
     print(f"   Output: {OUTPUT}")
+
+
+

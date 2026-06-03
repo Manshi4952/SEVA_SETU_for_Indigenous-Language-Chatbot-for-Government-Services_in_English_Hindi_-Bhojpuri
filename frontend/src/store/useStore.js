@@ -5,6 +5,7 @@
  *  - sendMessage now passes conversation_history (handled server-side)
  *  - addMessage / setTyping helpers for optimistic UI
  *  - activeConversationId tracked per session
+ *  - FIXED: UI flash race condition when switching chats
  */
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
@@ -49,6 +50,7 @@ const useStore = create(
       conversations: [],
       activeConversationId: null,
       isTyping: false,
+      isLoadingHistory: false, // <-- NEW: Added to prevent UI flashing
 
       setTyping: (val) => set({ isTyping: val }),
 
@@ -123,13 +125,24 @@ const useStore = create(
       },
 
       loadConversation: async (convId) => {
+        // NEW LOGIC: Instantly wipe old messages and turn on loading state
+        set({
+          messages: [],
+          isLoadingHistory: true,
+          activeConversationId: convId,
+        });
+
         try {
           const res = await api.get(`/chat/conversations/${convId}`);
+          // Load the new messages and turn off loading
           set({
             messages: res.data.messages,
-            activeConversationId: convId,
+            isLoadingHistory: false,
           });
-        } catch (_) {}
+        } catch (_) {
+          // If it fails, make sure the UI doesn't get stuck loading forever
+          set({ isLoadingHistory: false });
+        }
       },
 
       deleteConversation: async (convId) => {

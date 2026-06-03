@@ -1,5 +1,5 @@
 """
-rag_service.py – Upgraded RAG pipeline for SevaSetu v2.
+rag_service.py – Upgraded RAG pipeline for SevaSetu.
 
 Changes from v1:
   - LLM-powered response generation (Anthropic Claude)
@@ -10,11 +10,16 @@ Changes from v1:
   - Transliterated Bhojpuri detection in Roman script
   - Smart topic-aware fallback
 """
+
 from __future__ import annotations
 import json
 import re
 from typing import List, Tuple
 
+import faiss  # Make sure this is imported at the top of your file!
+
+# Add a global variable to store the index so your search function can use it
+ 
 _faiss_index = None
 _all_schemes: List[dict] = []
 _llm_client = None
@@ -52,14 +57,25 @@ def _parse_list(val):
     return []
 
 
+
+
 def initialize_rag(knowledge_base_path: str, index_path: str):
-    global _all_schemes
+    global _all_schemes, _faiss_index  # Grab both globals
+    
+    # 1. Load the JSON text data (Your original code)
     try:
         with open(knowledge_base_path, encoding="utf-8") as f:
             _all_schemes = json.load(f)
         print(f"[RAG] Loaded {len(_all_schemes)} schemes from {knowledge_base_path}.")
     except Exception as e:
-        print(f"[RAG] Warning: {e}")
+        print(f"[RAG] Warning loading JSON: {e}")
+
+    # 2. Load the FAISS embeddings (The new code for Step C)
+    try:
+        _faiss_index = faiss.read_index(index_path)
+        print(f"[RAG] Successfully loaded FAISS index from {index_path}.")
+    except Exception as e:
+        print(f"[RAG] Warning loading FAISS index: {e}")
 
 
 def _get_llm_client():
@@ -175,6 +191,9 @@ def _score_scheme(scheme: dict, keywords: List[str], query: str, language: str) 
     state = scheme.get("state","").lower().strip()
     if state in BIHAR_STATES: score += 1.5
     elif state: score -= 0.5
+
+    # --- ADD THE ALIAS BOOST HERE ---
+    score += _alias_boost(scheme, query)
 
     return score
 
@@ -328,25 +347,53 @@ def _build_scheme_response(scheme: dict, intent: str, language: str, mode: str) 
     elif intent == "documents":
         parts.append(f"{L['documents']}: {g(docs)}")
     elif intent == "apply":
-        parts.append(f"{L['apply']}: {g(apply_proc)}")
+        # ==========================================
+        # NEW LOGIC: PREVENT EMPTY FORM RESPONSES
+        # ==========================================
+        apply_text = g(apply_proc)
+        
+        # If application instructions are empty, try falling back to other descriptions
+        if not apply_text or not str(apply_text).strip():
+            apply_text = g(full_desc)
+            if not apply_text or not str(apply_text).strip():
+                apply_text = short_desc
+            # Final fallback if the scheme is completely empty
+            if not apply_text or not str(apply_text).strip():
+                apply_text = "Application details are not in our database. Visit the official state portal or CSC."
+                
+        parts.append(f"{L['apply']}: {apply_text}")
 
     return "\n".join(p for p in parts if p is not None)
 
 
-def generate_response(query: str, language: str, mode: str, matched: List[dict]) -> str:
+def generate_response(query: str, language: str, mode: str, matched: list) -> str:
     L = LABELS.get(language, LABELS["english"])
     greet_words = ["hello","hi","नमस्ते","हेलो","प्रणाम","नमस्कार","hey"]
+    
     if any(w in query.lower() for w in greet_words) and len(query) < 25:
         return L["greeting"]
+        
     if not matched:
         return _smart_fallback(query, language)
+
+    # ==========================================
+    # FINAL FIX: TEMPLATE FOLLOW-UP AMNESIA
+    # ==========================================
+    # If the user asks a follow-up, intercept it before the normal template builder runs
+    if _is_follow_up(query):
+        return _answer_follow_up(matched[0], query, language)
+
+    # Otherwise, continue with normal template building
     intent = detect_intent(query, language)
+    
     if len(matched) == 1 or mode == "beginner":
         return L["intro"] + _build_scheme_response(matched[0], intent, language, mode)
+        
     parts = [L["multi_found"],""]
     for scheme in matched[:3]:
         parts.append(_build_scheme_response(scheme, intent, language, mode))
         parts.append("\n---\n")
+        
     return "\n".join(parts)
 
 
@@ -433,16 +480,30 @@ def generate_response_llm(
     user_content = (
         f"User question: {query}\n\n"
         f"=== SCHEMES FROM DATABASE ===\n{scheme_context}\n\n"
-        f"{mode_instruction}\nRespond in: {language}"
+        f"{mode_instruction}"
     )
     messages.append({"role": "user", "content": user_content})
+
+    # ==========================================
+    # FINAL FIXES: DYNAMIC SYSTEM PROMPT
+    # ==========================================
+    # 1. Grab your existing global system prompt
+    dynamic_system_prompt = SYSTEM_PROMPT 
+
+    # 2. Fix Issue 5 (Bhojpuri Language Bug): Force translation
+    dynamic_system_prompt += f"\n\nCRITICAL LANGUAGE INSTRUCTION: Even if the context documents below are written in English, you MUST translate and reply entirely in {language}. Do not mix languages."
+
+    # 3. Fix Follow-up Amnesia: Force the AI to stick to the active scheme
+    if _is_follow_up(query) and matched:
+        pinned_scheme_name = matched[0]["scheme"]
+        dynamic_system_prompt += f"\n\nCRITICAL CONTEXT INSTRUCTION: The user is asking a follow-up about the scheme already discussed. Do NOT switch to a different scheme. Answer ONLY about: {pinned_scheme_name}."
 
     try:
         from app.core.config import settings
         resp = client.messages.create(
             model=settings.LLM_MODEL,
             max_tokens=settings.LLM_MAX_TOKENS,
-            system=SYSTEM_PROMPT,
+            system=dynamic_system_prompt,  # <--- We pass the new, strict prompt here!
             messages=messages,
         )
         return resp.content[0].text
@@ -455,19 +516,161 @@ def process_chat(
     message: str, language: str = "hindi",
     mode: str = "beginner", conversation_history: list = None,
 ) -> Tuple[str, List[dict], str]:
+    
+    # ==========================================
+    # FIX: ISSUE 5 (FORCE UI LANGUAGE)
+    # ==========================================
     detected = detect_language(message)
-    effective_language = detected if language == "auto" else language
+    # If the user explicitly picked a language in the UI menu, force the bot to use it.
+    if language in ["hindi", "bhojpuri", "english"]:
+        effective_language = language
+    else:
+        effective_language = detected if language == "auto" else language
+    
+    # Ensure history is always a list
+    history = conversation_history or []
 
-    matched_with_scores = _find_matching_schemes_scored(message, effective_language, top_k=3)
+    # ==========================================
+    # 1. NEW LOGIC: HANDLE FOLLOW-UP QUESTIONS
+    # ==========================================
+    if _is_follow_up(message) and history:
+        pinned = _scheme_from_history(history)
+        if pinned:
+            # We found the scheme! Lock onto it with a 999.0 score.
+            matched_with_scores = [(pinned, 999.0)]
+        else:
+            # We couldn't find the exact scheme, so glue their last question to this new one
+            last_user_msg = next((m["content"] for m in reversed(history) if m["role"] == "user"), "")
+            message_for_search = f"{last_user_msg} {message}"
+            matched_with_scores = _find_matching_schemes_scored(message_for_search, effective_language, top_k=3)
+    else:
+        # It's a brand new question, do a normal search
+        matched_with_scores = _find_matching_schemes_scored(message, effective_language, top_k=3)
+
+    # ==========================================
+    # 2. NEW LOGIC: REJECT WEAK MATCHES
+    # ==========================================
+    # If the absolute best match is terrible (under 5.0), throw it away so the bot doesn't hallucinate
+    if matched_with_scores and matched_with_scores[0][1] < 5.0:
+        matched_with_scores = []
+
+    # Extract just the scheme dictionaries to pass to the LLM
     matched = [s for s, _ in matched_with_scores]
 
+    # Generate the actual chat reply
     reply = generate_response_llm(
         query=message, language=effective_language, mode=mode,
-        matched=matched, conversation_history=conversation_history or [],
+        matched=matched, conversation_history=history,
     )
 
-    snippets = [
-        {"id": str(s["id"]), "name": s["scheme"], "relevance_score": round(min(sc / 12.0, 1.0), 2)}
-        for s, sc in matched_with_scores
-    ]
+    # ==========================================
+    # FIX: ISSUE 3 (EMPTY AI FALLBACK GUARD)
+    # ==========================================
+    # If the AI fails and returns a blank/short string, fall back to the standard template
+    if not reply or len(reply.strip()) < 40:
+        reply = generate_response(
+            query=message, language=effective_language, 
+            mode=mode, matched=matched
+        )
+
+    # ==========================================
+    # FIX: ISSUE 6 (THE 100% UI CHIPS & 0.5 CUTOFF)
+    # ==========================================
+    # Find the top score (or default to 1 if empty)
+    top_score = matched_with_scores[0][1] if matched_with_scores else 1
+    
+    snippets = []
+    for s, sc in matched_with_scores:
+        rel_score = round(sc / top_score, 2) if top_score else 0
+        
+        # Only show the chip in the UI if it is at least a 50% match
+        if rel_score >= 0.5:
+            snippets.append({
+                "id": str(s["id"]), 
+                "name": s["scheme"], 
+                "relevance_score": rel_score
+            })
+            
+    # Cap the display at a maximum of 3 chips
+    snippets = snippets[:3]
+    
     return reply, snippets, effective_language
+
+
+
+ACRONYMS = {"pm", "lpg", "bscc", "pmjay", "pmkmy", "fme", "neet", "ssc"}
+
+def _extract_keywords(query: str) -> list[str]:
+    if re.search(r'[\u0900-\u097F]', query):
+        words = [w.strip('।,?!।॥') for w in query.split() if len(w.strip('।,?!।॥')) >= 2]
+    else:
+        words = re.findall(r'\w+', query.lower())
+    keywords = []
+    for w in words:
+        wl = w.lower()
+        if wl in STOP_WORDS:
+            continue
+        if len(wl) >= 3 or wl in ACRONYMS:
+            keywords.append(wl if not re.search(r'[\u0900-\u097F]', w) else w)
+    return keywords
+
+
+SCHEME_ALIASES = {
+    "pm kisan": ["pm-kisan", "pradhan mantri kisan samman nidhi", "kisan samman"],
+    "pmay": ["pradhan mantri awas", "pm awas", "awas yojana"],
+    "pm-jay": ["ayushman bharat", "jan arogya"],
+    # add 20–30 common ones users ask for
+}
+
+def _alias_boost(scheme: dict, query: str) -> float:
+    q = query.lower()
+    name = scheme["scheme"].lower()
+    for alias_key, variants in SCHEME_ALIASES.items():
+        if alias_key in q or any(v in q for v in variants):
+            if alias_key.replace(" ", "") in name.replace(" ", "") or any(v in name for v in variants):
+                return 8.0
+    return 0.0
+
+
+FOLLOW_UP_RE = re.compile(
+    r'^(age\s*limit|आयु|उम्र|eligibility|documents?|benefits?|'
+    r'how\s+(to\s+)?apply|form|fill|steps?|पात्रता|कागज|फायदा|आवेदन).*$',
+    re.I
+)
+
+def _is_follow_up(query: str) -> bool:
+    q = query.strip()
+    return len(q.split()) <= 5 and bool(FOLLOW_UP_RE.match(q))
+
+
+def _scheme_from_history(history: list) -> dict | None:
+    for msg in reversed(history):
+        if msg["role"] != "assistant":
+            continue
+        # Match **Scheme Name** from markdown
+        m = re.search(r'\*\*(.+?)\*\*', msg["content"])
+        if m:
+            name = m.group(1).strip()
+            for s in _all_schemes:
+                if s["scheme"].lower() == name.lower():
+                    return s
+    return None
+
+def _answer_follow_up(scheme: dict, query: str, language: str) -> str:
+    """Handles follow-up questions when the LLM is turned off."""
+    q = query.lower()
+    name = scheme.get("scheme", "")
+    
+    if any(word in q for word in ["age", "आयु", "उम्र", "eligibility", "पात्रता"]):
+        ans = scheme.get("eligibility_criteria", "Eligibility details not available.")
+        return f"**{name}** - Eligibility & Age:\n{ans}"
+        
+    if any(word in q for word in ["apply", "form", "fill", "आवेदन"]):
+        ans = scheme.get("application_process", "Application details not available.")
+        return f"**{name}** - How to Apply:\n{ans}"
+        
+    if any(word in q for word in ["document", "कागज", "documents"]):
+        ans = scheme.get("documents_required", "Document details not available.")
+        return f"**{name}** - Required Documents:\n{ans}"
+        
+    return f"**{name}**:\n{scheme.get('scheme_short_description', 'More details not available.')}"
