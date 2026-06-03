@@ -54,7 +54,7 @@ jobs:
           FAISS_INDEX_PATH: ../ai_pipeline/faiss_index/schemes.index
         run: |
           cd backend
-          pytest tests/ -v --tb=short
+          python -m pytest tests/ -v --tb=short  # <--- Use 'python -m pytest'
 
   # ── Frontend Build ───────────────────────────────────────────────────────
   frontend-build:
