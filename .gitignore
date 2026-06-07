@@ -1,18 +1,92 @@
 # --- Backend ---
+# Python virtualenvs and env files
 backend/.env
+backend/.venv/
 backend/venv/
 backend/env/
-backend/__pycache__/
+venv/
+.venv/
+env/
+
+# Python compiled files
+**/__pycache__/
+**/*.py[cod]
 *.pyc
+*.pyo
+*.pyd
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Local DB / data
 backend/sevasetu.db
+*.sqlite3
+*.sqlite
+*.db
+
+# Large data / indexes
+data/
+*.index
+
+# Backend static media
 backend/static/audio/
 
 # --- Frontend ---
+# Env files
 frontend/.env
+frontend/.env.local
+frontend/.env.*
+
+# Node modules / build output
 frontend/node_modules/
 frontend/dist/
 frontend/build/
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
 
 # --- OS Files ---
 .DS_Store
 Thumbs.db
+
+# --- Testing / Coverage ---
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+coverage.xml
+
+# --- Jupyter ---
+.ipynb_checkpoints
+
+# --- Misc ---
+.cache/
+.eslintcache
+.parcel-cache/
+/.pnp*
+/.pnp.js
+/.pnp.cjs
+
+# Secrets and keys
+*.pem
+*.key
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+~*

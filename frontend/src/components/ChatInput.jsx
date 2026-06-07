@@ -1,202 +1,200 @@
 /**
- * components/ChatInput.jsx  –  Message input bar (v2)
- *
- * Changes:
- *  - Retry button shown on send error
- *  - Enter to send, Shift+Enter for newline
- *  - Voice input button wired to STT API
- *  - Mode toggle (Beginner / Advanced) controls LLM verbosity
+ * components/ChatInput.jsx  –  Message input bar with voice recording.
  */
-import { useState, useRef, useCallback } from "react";
-import { Send, Mic, MicOff, Loader2 } from "lucide-react";
-import clsx from "clsx";
+import { useState, useEffect, useRef } from "react";
+import { Send, Mic, MicOff, Volume2, Loader2 } from "lucide-react";
 import toast from "react-hot-toast";
 import useStore from "../store/useStore";
 import { t } from "../utils/i18n";
-import api from "../utils/api";
+import clsx from "clsx";
 
 export default function ChatInput() {
-  const { sendMessage, language, isTyping } = useStore();
-  const [text, setText] = useState("");
-  const [mode, setMode] = useState("beginner");
-  const [voiceActive, setVoiceActive] = useState(false);
-  const [voiceLoading, setVoiceLoading] = useState(false);
-  const [sending, setSending] = useState(false);
-  const textareaRef = useRef(null);
-  const tx = (k) => t(k, language);
+  const { sendMessage, language, mode, setMode, isTyping } = useStore();
+  const [text, setText]           = useState("");
+  const [recording, setRecording] = useState(false);
+  const [voiceOut, setVoiceOut]   = useState(false);
+  const [sending, setSending]     = useState(false);
+  const inputRef  = useRef(null);
+  const mediaRef  = useRef(null);
+  const chunksRef = useRef([]);
+  const tx = (key) => t(key, language);
 
-  const handleSend = useCallback(async () => {
-    const trimmed = text.trim();
-    if (!trimmed || isTyping || sending) return;
+  // Listen for suggestion clicks from ChatWindow empty state
+  useEffect(() => {
+    const handler = (e) => setText(e.detail);
+    window.addEventListener("suggestion-click", handler);
+    return () => window.removeEventListener("suggestion-click", handler);
+  }, []);
 
+  const handleSend = async () => {
+    const msg = text.trim();
+    if (!msg || sending || isTyping) return;
     setText("");
     setSending(true);
     try {
-      await sendMessage(trimmed, language, mode, false);
-    } catch {
-      toast.error(
-        language === "hindi"
-          ? "भेजने में त्रुटि हुई। फिर कोशिश करें।"
-          : language === "bhojpuri"
-          ? "भेजे में गड़बड़ भइल। फेर कोशिश करीं।"
-          : "Failed to send. Please try again."
-      );
+      await sendMessage(msg, voiceOut);
+    } catch (err) {
+      toast.error(err?.response?.data?.detail || "Failed to send message");
     } finally {
       setSending(false);
-      textareaRef.current?.focus();
+      inputRef.current?.focus();
     }
-  }, [text, isTyping, sending, sendMessage, language, mode]);
+  };
 
-  const handleKeyDown = (e) => {
+  const handleKey = (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSend();
     }
   };
 
-  // Voice input via STT
-  const handleVoice = async () => {
-    if (!navigator.mediaDevices?.getUserMedia) {
-      toast.error("Voice input not supported in this browser.");
-      return;
-    }
-    setVoiceActive(true);
-    setVoiceLoading(true);
+  // ── Voice recording ────────────────────────────────────────────────────────
+  const startRecording = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const recorder = new MediaRecorder(stream);
-      const chunks = [];
-      recorder.ondataavailable = (e) => chunks.push(e.data);
+      chunksRef.current = [];
+      recorder.ondataavailable = (e) => chunksRef.current.push(e.data);
       recorder.onstop = async () => {
+        const blob = new Blob(chunksRef.current, { type: "audio/wav" });
+        await uploadAudio(blob);
         stream.getTracks().forEach((t) => t.stop());
-        const blob = new Blob(chunks, { type: "audio/webm" });
-        const formData = new FormData();
-        formData.append("audio", blob, "voice.webm");
-        try {
-          const res = await api.post(`/voice/stt?language=${language}`, formData, {
-            headers: { "Content-Type": "multipart/form-data" },
-          });
-          if (res.data.text) {
-            setText(res.data.text);
-          }
-        } catch {
-          toast.error("Voice transcription failed.");
-        } finally {
-          setVoiceLoading(false);
-          setVoiceActive(false);
-        }
       };
       recorder.start();
-      // Auto-stop after 8 seconds
-      setTimeout(() => { if (recorder.state === "recording") recorder.stop(); }, 8000);
-      toast(
-        language === "hindi" ? "🎤 8 सेकंड बोलें…" : language === "bhojpuri" ? "🎤 8 सेकंड बोलीं…" : "🎤 Speak for 8 seconds…",
-        { duration: 8000 }
-      );
+      mediaRef.current = recorder;
+      setRecording(true);
+      toast("🎙️ Recording… tap again to stop", { duration: 2000 });
     } catch {
-      toast.error("Microphone access denied.");
-      setVoiceActive(false);
-      setVoiceLoading(false);
+      toast.error("Microphone access denied");
     }
   };
 
-  const modeLabels = {
-    beginner: { hindi: "आसान", bhojpuri: "आसान", english: "Simple" },
-    advanced: { hindi: "विस्तार से", bhojpuri: "विस्तार से", english: "Detailed" },
+  const stopRecording = () => {
+    mediaRef.current?.stop();
+    setRecording(false);
   };
 
+  const uploadAudio = async (blob) => {
+    const stored = JSON.parse(localStorage.getItem("sevasetu-store") || "{}");
+    const token  = stored?.state?.token;
+    const form   = new FormData();
+    form.append("audio", blob, "recording.wav");
+    form.append("language", language);
+
+    setSending(true);
+    try {
+      const res = await fetch("/api/v1/voice/stt", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` },
+        body: form,
+      });
+      const data = await res.json();
+      if (data.transcript) {
+        setText(data.transcript);
+        toast.success("✅ Transcribed!");
+      } else {
+        toast.error("Could not understand audio");
+      }
+    } catch {
+      toast.error("Transcription failed");
+    } finally {
+      setSending(false);
+    }
+  };
+
+  const isDisabled = sending || isTyping;
+
   return (
-    <div className="border-t border-blue-50 dark:border-white/10 bg-white/80 dark:bg-charcoal/80
-                    backdrop-blur-sm px-4 py-3">
+    <div className="border-t border-blue-50 dark:border-white/10 p-3 bg-white/80 dark:bg-charcoal/80 backdrop-blur-md">
       {/* Mode toggle */}
-      <div className="flex items-center gap-2 mb-2">
-        <span className="text-xs text-charcoal/40 dark:text-white/40">
-          {language === "hindi" ? "तरीका:" : language === "bhojpuri" ? "तरीका:" : "Mode:"}
-        </span>
+      <div className="flex items-center gap-2 mb-2 px-1">
+        <span className="text-xs text-charcoal/50 dark:text-white/50">{tx("mode")}:</span>
         {["beginner", "advanced"].map((m) => (
-          <button
-            key={m}
+          <button key={m}
             onClick={() => setMode(m)}
             className={clsx(
-              "px-3 py-0.5 rounded-full text-xs font-medium transition-all",
+              "text-xs px-3 py-0.5 rounded-full font-medium transition-all",
               mode === m
                 ? "bg-ashoka text-white shadow-glow-blue"
-                : "border border-blue-100 dark:border-white/20 text-charcoal/50 dark:text-white/50 hover:border-ashoka"
-            )}
-          >
-            {modeLabels[m][language] || modeLabels[m].english}
+                : "bg-blue-50 dark:bg-white/10 text-charcoal/60 dark:text-white/60 hover:bg-blue-100"
+            )}>
+            {tx(m)}
           </button>
         ))}
+
+        <div className="flex-1" />
+
+        {/* Voice output toggle */}
+        <button
+          onClick={() => setVoiceOut((v) => !v)}
+          title="Toggle voice response"
+          className={clsx(
+            "flex items-center gap-1 text-xs px-2 py-0.5 rounded-full transition-all",
+            voiceOut
+              ? "bg-jade/10 text-jade border border-jade/30"
+              : "text-charcoal/40 dark:text-white/40 hover:text-jade"
+          )}>
+          <Volume2 size={12} />
+          {voiceOut ? "आवाज़ चालू" : "आवाज़ बंद"}
+        </button>
       </div>
 
       {/* Input row */}
       <div className="flex items-end gap-2">
         <div className="flex-1 relative">
           <textarea
-            ref={textareaRef}
+            ref={inputRef}
             value={text}
             onChange={(e) => setText(e.target.value)}
-            onKeyDown={handleKeyDown}
+            onKeyDown={handleKey}
             placeholder={tx("typePlaceholder")}
             rows={1}
-            disabled={isTyping || sending}
-            className="w-full resize-none px-4 py-3 rounded-2xl border border-blue-100
-                       dark:border-white/20 bg-white dark:bg-charcoal/60 text-charcoal
-                       dark:text-white placeholder:text-charcoal/30 dark:placeholder:text-white/30
-                       text-sm focus:outline-none focus:ring-2 focus:ring-ashoka/30 transition-all
-                       min-h-[44px] max-h-32 overflow-y-auto disabled:opacity-60"
-            style={{ height: "auto" }}
-            onInput={(e) => {
-              e.target.style.height = "auto";
-              e.target.style.height = Math.min(e.target.scrollHeight, 128) + "px";
-            }}
+            disabled={isDisabled}
+            style={{ resize: "none", minHeight: "44px", maxHeight: "120px" }}
+            className="w-full px-4 py-2.5 pr-12 rounded-2xl border border-blue-100 dark:border-white/20
+                       bg-white dark:bg-charcoal text-sm text-charcoal dark:text-white
+                       placeholder:text-charcoal/30 dark:placeholder:text-white/30
+                       focus:outline-none focus:ring-2 focus:ring-ashoka/30
+                       disabled:opacity-50 transition-all"
           />
-        </div>
 
-        {/* Voice button */}
-        <button
-          onClick={handleVoice}
-          disabled={voiceLoading || isTyping}
-          title={tx("voiceBtn")}
-          className={clsx(
-            "w-11 h-11 rounded-xl flex items-center justify-center transition-all flex-shrink-0",
-            voiceActive
-              ? "bg-red-500 text-white animate-pulse"
-              : "border border-blue-100 dark:border-white/20 text-charcoal/40 hover:text-saffron hover:border-saffron"
-          )}
-        >
-          {voiceLoading ? (
-            <Loader2 size={18} className="animate-spin" />
-          ) : voiceActive ? (
-            <MicOff size={18} />
-          ) : (
-            <Mic size={18} />
-          )}
-        </button>
+          {/* Voice mic inside input */}
+          <button
+            onClick={recording ? stopRecording : startRecording}
+            disabled={isDisabled}
+            className={clsx(
+              "absolute right-3 bottom-2.5 p-1.5 rounded-full transition-all",
+              recording
+                ? "bg-red-500 text-white animate-pulse-slow"
+                : "text-charcoal/40 hover:text-saffron hover:bg-saffron/10"
+            )}>
+            {recording ? <MicOff size={16} /> : <Mic size={16} />}
+          </button>
+        </div>
 
         {/* Send button */}
         <button
           onClick={handleSend}
-          disabled={!text.trim() || isTyping || sending}
-          className="w-11 h-11 rounded-xl bg-ashoka text-white flex items-center justify-center
-                     shadow-glow-blue hover:bg-ashoka-dark transition-all active:scale-95
-                     disabled:opacity-40 disabled:cursor-not-allowed flex-shrink-0"
-        >
-          {sending || isTyping ? (
-            <Loader2 size={18} className="animate-spin" />
-          ) : (
-            <Send size={18} />
-          )}
+          disabled={!text.trim() || isDisabled}
+          className={clsx(
+            "w-11 h-11 rounded-2xl flex items-center justify-center transition-all flex-shrink-0",
+            text.trim() && !isDisabled
+              ? "bg-ashoka text-white shadow-glow-blue hover:bg-ashoka-dark active:scale-95"
+              : "bg-blue-50 dark:bg-white/10 text-charcoal/30 dark:text-white/30 cursor-not-allowed"
+          )}>
+          {sending ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
         </button>
       </div>
 
-      <p className="text-[10px] text-charcoal/25 dark:text-white/25 text-center mt-2">
-        {language === "hindi"
-          ? "Enter से भेजें · Shift+Enter से नई लाइन"
-          : language === "bhojpuri"
-          ? "Enter से भेजीं · Shift+Enter से नई लाइन"
-          : "Enter to send · Shift+Enter for new line"}
-      </p>
+      {/* Recording waveform */}
+      {recording && (
+        <div className="flex items-center justify-center gap-0.5 mt-2 h-5">
+          {[...Array(12)].map((_, i) => (
+            <div key={i} className="waveform-bar"
+                 style={{ height: `${8 + Math.random() * 12}px`, animationDelay: `${i * 0.08}s` }} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

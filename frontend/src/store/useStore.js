@@ -1,11 +1,11 @@
 /**
- * store/useStore.js  –  Zustand global state (v2)
+ * store/useStore.js  –  Global Zustand state for SevaSetu.
  *
- * Changes:
- *  - sendMessage now passes conversation_history (handled server-side)
- *  - addMessage / setTyping helpers for optimistic UI
- *  - activeConversationId tracked per session
- *  - FIXED: UI flash race condition when switching chats
+ * Slices:
+ *   auth        – current user + JWT token
+ *   chat        – active conversation, messages, loading
+ *   settings    – language, mode (beginner/advanced), dark mode
+ *   schemes     – cached scheme list
  */
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
@@ -15,168 +15,122 @@ const useStore = create(
   persist(
     (set, get) => ({
       // ── Auth ──────────────────────────────────────────────────────────────
-      user: null,
+      user:  null,
       token: null,
       isAuthenticated: false,
 
       login: async (email, password) => {
-        const res = await api.post("/auth/login", { email, password });
-        const { access_token, user_id, role, preferred_lang } = res.data;
-        set({
-          token: access_token,
-          isAuthenticated: true,
-          user: { id: user_id, role, preferred_lang },
-          language: preferred_lang || "hindi",
-        });
+        const { data } = await api.post("/auth/login", { email, password });
+        api.defaults.headers.common["Authorization"] = `Bearer ${data.access_token}`;
+        set({ token: data.access_token, isAuthenticated: true,
+              user: { id: data.user_id, role: data.role, preferred_lang: data.preferred_lang } });
+        set({ language: data.preferred_lang });
+        return data;
       },
 
       register: async (payload) => {
-        const res = await api.post("/auth/register", payload);
-        const { access_token, user_id, role, preferred_lang } = res.data;
-        set({
-          token: access_token,
-          isAuthenticated: true,
-          user: { id: user_id, role, preferred_lang },
-          language: preferred_lang || "hindi",
-        });
+        const { data } = await api.post("/auth/register", payload);
+        api.defaults.headers.common["Authorization"] = `Bearer ${data.access_token}`;
+        set({ token: data.access_token, isAuthenticated: true,
+              user: { id: data.user_id, role: data.role, preferred_lang: data.preferred_lang } });
+        return data;
       },
 
-      logout: () =>
+      logout: () => {
+        delete api.defaults.headers.common["Authorization"];
         set({ user: null, token: null, isAuthenticated: false,
-              messages: [], conversations: [], activeConversationId: null }),
+              messages: [], activeConversationId: null });
+      },
 
-      // ── Chat ──────────────────────────────────────────────────────────────
-      messages: [],
-      conversations: [],
-      activeConversationId: null,
-      isTyping: false,
-      isLoadingHistory: false, // <-- NEW: Added to prevent UI flashing
+      // ── Settings ─────────────────────────────────────────────────────────
+      language:  "hindi",
+      mode:      "beginner",
+      darkMode:  false,
 
-      setTyping: (val) => set({ isTyping: val }),
+      setLanguage: (lang) => set({ language: lang }),
+      setMode:     (mode) => set({ mode }),
+      toggleDark:  ()     => set((s) => ({ darkMode: !s.darkMode })),
 
-      addMessage: (msg) =>
-        set((s) => ({ messages: [...s.messages, msg] })),
+      // ── Chat ─────────────────────────────────────────────────────────────
+      messages:              [],
+      activeConversationId:  null,
+      conversations:         [],
+      isTyping:              false,
 
-      setMessages: (msgs) => set({ messages: msgs }),
+      setActiveConversation: (id) => set({ activeConversationId: id, messages: [] }),
 
-      clearMessages: () => set({ messages: [], activeConversationId: null }),
+      loadConversations: async () => {
+        const { data } = await api.get("/chat/conversations");
+        set({ conversations: data });
+      },
 
-      sendMessage: async (text, language, mode, voiceOutput = false) => {
-        const convId = get().activeConversationId;
+      loadMessages: async (convId) => {
+        const { data } = await api.get(`/chat/conversations/${convId}`);
+        set({ messages: data.messages, activeConversationId: convId });
+      },
 
-        // Optimistically add the user message to UI
-        const tempUserMsg = {
-          id: Date.now(),
-          role: "user",
-          content: text,
-          language,
-          created_at: new Date().toISOString(),
-          _temp: true,
+      sendMessage: async (text, voiceOutput = false) => {
+        const { language, mode, activeConversationId } = get();
+
+        // Optimistically add user message
+        const tempMsg = {
+          id: Date.now(), role: "user", content: text,
+          language, created_at: new Date().toISOString(),
         };
-        set((s) => ({ messages: [...s.messages, tempUserMsg], isTyping: true }));
+        set((s) => ({ messages: [...s.messages, tempMsg], isTyping: true }));
 
         try {
-          const res = await api.post("/chat/message", {
+          const { data } = await api.post("/chat/message", {
             message: text,
             language,
             mode,
-            conversation_id: convId || undefined,
+            conversation_id: activeConversationId,
             voice_output: voiceOutput,
           });
 
-          const { reply, language: detectedLang, conversation_id,
-                  retrieved_schemes, audio_url } = res.data;
-
           const botMsg = {
-            id: Date.now() + 1,
+            id: data.message_id,
             role: "assistant",
-            content: reply,
-            language: detectedLang,
-            retrieved_schemes: retrieved_schemes || [],
-            audio_url,
+            content: data.reply,
+            language: data.language,
+            retrieved_schemes: data.retrieved_schemes,
+            audio_url: data.audio_url,
             created_at: new Date().toISOString(),
           };
 
           set((s) => ({
-            messages: [...s.messages.filter((m) => !m._temp), botMsg],
-            activeConversationId: conversation_id,
+            messages: [...s.messages, botMsg],
+            activeConversationId: data.conversation_id,
             isTyping: false,
           }));
 
-          // Refresh conversation list silently
+          // Refresh conversation list
           get().loadConversations();
-
-          return botMsg;
+          return data;
         } catch (err) {
-          set((s) => ({
-            messages: s.messages.filter((m) => !m._temp),
-            isTyping: false,
-          }));
+          set((s) => ({ isTyping: false,
+            messages: s.messages.filter((m) => m.id !== tempMsg.id) }));
           throw err;
         }
       },
 
-      loadConversations: async () => {
-        if (!get().isAuthenticated) return;
-        try {
-          const res = await api.get("/chat/conversations");
-          set({ conversations: res.data });
-        } catch (_) {}
-      },
-
-      loadConversation: async (convId) => {
-        // NEW LOGIC: Instantly wipe old messages and turn on loading state
-        set({
-          messages: [],
-          isLoadingHistory: true,
-          activeConversationId: convId,
-        });
-
-        try {
-          const res = await api.get(`/chat/conversations/${convId}`);
-          // Load the new messages and turn off loading
-          set({
-            messages: res.data.messages,
-            isLoadingHistory: false,
-          });
-        } catch (_) {
-          // If it fails, make sure the UI doesn't get stuck loading forever
-          set({ isLoadingHistory: false });
-        }
-      },
-
-      deleteConversation: async (convId) => {
-        await api.delete(`/chat/conversations/${convId}`);
-        set((s) => ({
-          conversations: s.conversations.filter((c) => c.id !== convId),
-          messages: s.activeConversationId === convId ? [] : s.messages,
-          activeConversationId: s.activeConversationId === convId ? null : s.activeConversationId,
-        }));
-      },
+      clearChat: () => set({ messages: [], activeConversationId: null }),
 
       // ── Schemes ───────────────────────────────────────────────────────────
       schemes: [],
-      loadSchemes: async (lang = "hindi") => {
-        try {
-          const res = await api.get(`/schemes/?language=${lang}&limit=100`);
-          set({ schemes: res.data });
-        } catch (_) {}
+      loadSchemes: async () => {
+        const { data } = await api.get("/schemes/");
+        set({ schemes: data });
       },
-
-      // ── UI prefs ──────────────────────────────────────────────────────────
-      language: "hindi",
-      setLanguage: (lang) => set({ language: lang }),
-
-      darkMode: false,
-      toggleDark: () => set((s) => ({ darkMode: !s.darkMode })),
     }),
     {
       name: "sevasetu-store",
       partialize: (s) => ({
         token: s.token,
-        user: s.user,
+        user:  s.user,
         isAuthenticated: s.isAuthenticated,
         language: s.language,
+        mode:     s.mode,
         darkMode: s.darkMode,
       }),
     }

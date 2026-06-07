@@ -54,9 +54,7 @@ jobs:
           FAISS_INDEX_PATH: ../ai_pipeline/faiss_index/schemes.index
         run: |
           cd backend
-          # We add '|| true' so that if the 'tests/' folder is missing, 
-          # GitHub won't treat it as a crash.
-          python -m pytest tests/ -v --tb=short || true
+          pytest tests/ -v --tb=short
 
   # ── Frontend Build ───────────────────────────────────────────────────────
   frontend-build:

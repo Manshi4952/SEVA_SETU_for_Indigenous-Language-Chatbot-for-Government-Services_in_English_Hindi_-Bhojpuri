@@ -1,0 +1,53 @@
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+pip-wheel-metadata/
+
+# Virtualenvs
+venv/
+.venv/
+env/
+
+# --- Databases / data ---
+*.db
+*.sqlite
+*.sqlite3
+data/faiss.index
+*.index
+
+# --- Generated media / static uploads ---
+static/audio/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Backups / temp ---
+*.bak
+*.tmp
+*.temp
+~*
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

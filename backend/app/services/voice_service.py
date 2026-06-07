@@ -47,42 +47,23 @@ def estimate_duration(text: str) -> float:
     return round(words / 2.5, 1)   # ~150 wpm = 2.5 words/sec
 
 
-
-
 def speech_to_text(audio_file_path: str, language: str = "hindi") -> Optional[str]:
-    from pydub import AudioSegment
+    """
+    Transcribe an audio file to text using SpeechRecognition + Google STT.
+    Supports .wav / .mp3 files.
+    """
     import speech_recognition as sr
-    import os
-    
-    wav_path = audio_file_path
-    
-    # 1. Convert WebM to WAV dynamically
-    if audio_file_path.endswith(".webm"):
-        wav_path = audio_file_path + ".wav"
-        try:
-            AudioSegment.from_file(audio_file_path).export(wav_path, format="wav")
-        except Exception as e:
-            print(f"[Voice] FFmpeg conversion error: {e}")
-            return None
 
-    # 2. Map the language codes (Bhojpuri routes to Hindi STT)
     lang_code = {"english": "en-IN", "hindi": "hi-IN", "bhojpuri": "hi-IN"}.get(language, "hi-IN")
-    
-    # 3. Transcribe the audio
     recognizer = sr.Recognizer()
+
     try:
-        with sr.AudioFile(wav_path) as source:
+        with sr.AudioFile(audio_file_path) as source:
+            recognizer.adjust_for_ambient_noise(source, duration=0.3)
             audio_data = recognizer.record(source)
-        
         text = recognizer.recognize_google(audio_data, language=lang_code)
-        
-        # Cleanup temporary files (Optional but highly recommended)
-        if os.path.exists(wav_path) and wav_path != audio_file_path:
-            os.remove(wav_path)
-            
         return text
     except sr.UnknownValueError:
-        return None  # Could not understand audio
-    except sr.RequestError as e:
-        print(f"[Voice] API unavailable: {e}")
         return None
+    except sr.RequestError as e:
+        raise RuntimeError(f"STT service error: {e}")

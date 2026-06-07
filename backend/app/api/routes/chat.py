@@ -1,9 +1,5 @@
 """
 api/routes/chat.py – Conversation and message endpoints.
-
-v2 changes:
-  - Loads last 6 messages from DB and passes as conversation_history to RAG
-  - Fixes NaN% by ensuring snippets have relevance_score
 """
 from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException
@@ -16,6 +12,8 @@ from app.services import rag_service
 
 router = APIRouter(prefix="/chat", tags=["chat"])
 
+
+# ── Schemas ───────────────────────────────────────────────────────────────────
 
 class MessageRequest(BaseModel):
     message: str
@@ -47,9 +45,13 @@ class ConversationOut(BaseModel):
         from_attributes = True
 
 
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
 def _fmt_dt(dt) -> str:
     return dt.isoformat() if dt else ""
 
+
+# ── Endpoints ─────────────────────────────────────────────────────────────────
 
 @router.post("/message")
 def send_message(
@@ -74,19 +76,6 @@ def send_message(
         db.commit()
         db.refresh(conv)
 
-    # ── Load conversation history for context ──────────────────────────────
-    recent_messages = (
-        db.query(Message)
-        .filter(Message.conversation_id == conv.id)
-        .order_by(Message.created_at.desc())
-        .limit(6)
-        .all()
-    )
-    conversation_history = [
-        {"role": m.role, "content": m.content}
-        for m in reversed(recent_messages)
-    ]
-
     # Save user message
     user_msg = Message(
         conversation_id=conv.id,
@@ -98,12 +87,11 @@ def send_message(
     db.commit()
     db.refresh(user_msg)
 
-    # RAG pipeline — now with conversation history
+    # RAG pipeline
     reply_text, snippets, detected_lang = rag_service.process_chat(
         message=req.message,
         language=req.language,
         mode=req.mode,
-        conversation_history=conversation_history,
     )
 
     # Optional TTS

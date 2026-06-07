@@ -39,26 +39,11 @@ async def speech_to_text_endpoint(
     try:
         from app.services.voice_service import speech_to_text
         suffix = os.path.splitext(audio.filename)[1] or ".wav"
-        
         with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
             tmp.write(await audio.read())
             tmp_path = tmp.name
-            
-        # Send the temp file to the converter (which now handles .webm)
         text = speech_to_text(tmp_path, language)
         os.unlink(tmp_path)
-        
+        return {"text": text}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"STT error: {e}")
-
-    # ==========================================
-    # NEW LOGIC: Catch empty transcriptions
-    # ==========================================
-    # We do this OUTSIDE the try/except block so it correctly sends a 422 status
-    if not text:
-        raise HTTPException(
-            status_code=422, 
-            detail="Could not understand audio. Please speak clearly for 8 seconds."
-        )
-
-    return {"text": text}

@@ -40,11 +40,11 @@ body {
 
 /* ── Chat bubble styles ─────────────────────────────────────────────────────── */
 .chat-bubble-user {
-  @apply bg-ashoka text-white rounded-2xl rounded-br-sm px-4 py-3 max-w-full shadow-md text-sm;
+  @apply bg-ashoka text-white rounded-2xl rounded-br-sm px-4 py-3 max-w-[80%] ml-auto shadow-md;
 }
 
 .chat-bubble-bot {
-  @apply bg-white border border-blue-50 text-charcoal rounded-2xl rounded-bl-sm px-4 py-3 max-w-full shadow-card text-sm;
+  @apply bg-white border border-blue-50 text-charcoal rounded-2xl rounded-bl-sm px-4 py-3 max-w-[85%] shadow-card;
 }
 
 .dark .chat-bubble-bot {
@@ -100,22 +100,4 @@ body {
 .scheme-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(10, 61, 145, 0.15);
-}
-
-/* ── Markdown in chat bubbles ────────────────────────────────────────────── */
-.chat-bubble-bot strong {
-  font-weight: 600;
-  color: var(--ashoka-blue);
-}
-.dark .chat-bubble-bot strong {
-  color: #93C5FD;
-}
-.chat-bubble-bot ol,
-.chat-bubble-bot ul {
-  padding-left: 1rem;
-}
-.chat-bubble-bot ol li,
-.chat-bubble-bot ul li {
-  margin-bottom: 0.25rem;
-  line-height: 1.6;
 }

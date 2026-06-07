@@ -7,28 +7,33 @@ from typing import List
 
 class Settings(BaseSettings):
     APP_NAME: str = "SevaSetu"
-    APP_VERSION: str = "2.0.0"
+    APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
 
+    # Database – defaults to SQLite so no Postgres needed locally
     DATABASE_URL: str = "sqlite:///./sevasetu.db"
 
+    # JWT
     SECRET_KEY: str = "changeme-super-secret-key-32chars!"
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 1 day
 
+    # CORS – comma-separated origins
     ALLOWED_ORIGINS: str = "http://localhost:3000,http://127.0.0.1:3000"
 
-    KNOWLEDGE_BASE_PATH: str = "./data/schemes_cleaned.json"
+    # AI / RAG paths
+    KNOWLEDGE_BASE_PATH: str = "./data/schemes.json"
     FAISS_INDEX_PATH: str = "./data/faiss.index"
 
-    ANTHROPIC_API_KEY: str = ""
-    OPENAI_API_KEY: str = ""
-
-    LLM_MODEL: str = "claude-haiku-4-5-20251001"
-    LLM_MAX_TOKENS: int = 700
-    LLM_TEMPERATURE: float = 0.4
-
+    # Voice
     AUDIO_OUTPUT_DIR: str = "./static/audio"
+    # Telegram
+    TELEGRAM_BOT_TOKEN: str | None = None
+
+    # LLM (OpenRouter — OpenAI-compatible API)
+    OPENAI_API_KEY: str | None = None
+    LLM_BASE_URL: str = "https://openrouter.ai/api/v1"
+    LLM_MODEL: str = "google/gemma-4-31b-it:free"
 
     @property
     def allowed_origins_list(self) -> List[str]:
