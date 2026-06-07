@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Variables ────────────────────────────────────────────────────────── */
+:root {
+  --saffron:     #FF6B2B;
+  --saffron-light: #FF8C55;
+  --ashoka-blue: #0A3D91;
+  --jade-green:  #138808;
+  --cream:       #FFF8EF;
+  --charcoal:    #1A1A2E;
+  --shadow-card: 0 4px 24px rgba(10, 61, 145, 0.08);
+}
+
+.dark {
+  --cream: #1A1A2E;
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(10, 61, 145, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--ashoka-blue); }
+
+/* ── Chat bubble styles ─────────────────────────────────────────────────────── */
+.chat-bubble-user {
+  @apply bg-ashoka text-white rounded-2xl rounded-br-sm px-4 py-3 max-w-[80%] ml-auto shadow-md;
+}
+
+.chat-bubble-bot {
+  @apply bg-white border border-blue-50 text-charcoal rounded-2xl rounded-bl-sm px-4 py-3 max-w-[85%] shadow-card;
+}
+
+.dark .chat-bubble-bot {
+  @apply bg-charcoal-light border-white/10 text-white;
+}
+
+/* ── Voice waveform animation ─────────────────────────────────────────────── */
+.waveform-bar {
+  display: inline-block;
+  width: 3px;
+  margin: 0 2px;
+  border-radius: 2px;
+  background: var(--saffron);
+  animation: wave 1.2s ease-in-out infinite;
+}
+.waveform-bar:nth-child(2) { animation-delay: 0.1s; }
+.waveform-bar:nth-child(3) { animation-delay: 0.2s; }
+.waveform-bar:nth-child(4) { animation-delay: 0.3s; }
+.waveform-bar:nth-child(5) { animation-delay: 0.15s; }
+
+/* ── Typing dots ─────────────────────────────────────────────────────────── */
+.typing-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--ashoka-blue);
+  animation: bounce-subtle 1.2s ease-in-out infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.30s; }
+
+/* ── Tricolor border ─────────────────────────────────────────────────────── */
+.tricolor-border {
+  border-image: linear-gradient(90deg, #FF6B2B, #FFFFFF, #138808) 1;
+}
+
+/* ── Glassmorphism ───────────────────────────────────────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.dark .glass {
+  background: rgba(26, 26, 46, 0.7);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ── Scheme card hover ───────────────────────────────────────────────────── */
+.scheme-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.scheme-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(10, 61, 145, 0.15);
+}
