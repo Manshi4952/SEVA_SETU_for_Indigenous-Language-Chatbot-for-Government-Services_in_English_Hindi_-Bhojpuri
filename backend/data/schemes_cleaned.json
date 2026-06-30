@@ -7814,19 +7814,23 @@
     },
     "benefits": {
       "english": "Transparent and hassle-free processing of wealth/property verification certificates within a strict timeline of 30 days.",
-      "hindi": "30 दिनों की सख्त समय सीमा के भीतर संपत्ति सत्यापन प्रमाणपत्रों की पारदर्शी और परेशानी मुक्त प्रोसेसिंग।"
+      "hindi": "30 दिनों की सख्त समय सीमा के भीतर संपत्ति सत्यापन प्रमाणपत्रों की पारदर्शी और परेशानी मुक्त प्रोसेसिंग।",
+      "bhojpuri": "30 दिन की सख्त समय सीमा के अंदर जमीनी सत्यापन प्रमाणपत्र के पारदर्शी आणि परेशानी मुक्त प्रोसेसिंग मिलेला।"
     },
     "eligibility": {
       "english": "Any citizen residing in Uttar Pradesh who requires legal documentary verification of their total property valuation.",
-      "hindi": "उत्तर प्रदेश में रहने वाला कोई भी नागरिक जिसे अपनी कुल संपत्ति के मूल्य के कानूनी दस्तावेजी सत्यापन की आवश्यकता हो।"
+      "hindi": "उत्तर प्रदेश में रहने वाला कोई भी नागरिक जिसे अपनी कुल संपत्ति के मूल्य के कानूनी दस्तावेजी सत्यापन की आवश्यकता हो।",
+      "bhojpuri": "उत्तर प्रदेश में रहे वाला कोई भी नागरिक जेकरा अपनी कुल संपत्ति के मूल्य के कानूनी दस्तावेजी सत्यापन खातिर जरूरत बा, ऊ UP Haisiyat Praman Patra Online Service के माध्यम से अपना हैसियत प्रमाण पत्र मिलेला।"
     },
     "documents_required": {
       "english": "Applicant details, registered property documents, structural/land location papers, active mobile number for OTP confirmation, and private valuer reports (if applicable).",
-      "hindi": "आवेदक का विवरण, पंजीकृत संपत्ति के दस्तावेज, संरचना/भूमि के स्थान के कागजात, ओटीपी सत्यापन के लिए सक्रिय मोबाइल नंबर, और निजी मूल्यांकनकर्ता की रिपोर्ट (यदि लागू हो)।"
+      "hindi": "आवेदक का विवरण, पंजीकृत संपत्ति के दस्तावेज, संरचना/भूमि के स्थान के कागजात, ओटीपी सत्यापन के लिए सक्रिय मोबाइल नंबर, और निजी मूल्यांकनकर्ता की रिपोर्ट (यदि लागू हो)।",
+      "bhojpuri": "आवेदक के बारे में जानकारी, पंजीकृत संपत्ति के कागज, संरचना/जमीन के जगह के दस्तावेज, ओटीपी सत्यापन खातिर एक्टिव मोबाइल नंबर, आरू निजी मूल्यांकनकर्ता के रिपोर्ट (यदि लागू हो) मिलेला।"
     },
     "application_process": {
       "english": "Visit edistrict.up.nic.in, click 'Citizen Login' (सिटीजन लॉगिन), register as a new user by entering personal information to receive an OTP password. Log in with the OTP, change your password, click 'Apply Form' (आवेदन भरें), select 'Haisiyat Certificate' from the service list, enter property/applicant data, attach documents, and submit.",
-      "hindi": "edistrict.up.nic.in पर जाएं, 'सिटीजन लॉगिन' पर क्लिक करें, 'New users Register' पर क्लिक करके व्यक्तिगत विवरण भरें और प्राप्त ओटीपी पासवर्ड से पहली बार लॉगिन करें। पासवर्ड बदलें, फिर 'आवेदन भरें' लिंक पर क्लिक करें, 'हैसियत प्रमाण पत्र' सेवा चुनें, संपत्ति और आवेदक का डेटा भरें, दस्तावेज अपलोड करके सबमिट करें।"
+      "hindi": "edistrict.up.nic.in पर जाएं, 'सिटीजन लॉगिन' पर क्लिक करें, 'New users Register' पर क्लिक करके व्यक्तिगत विवरण भरें और प्राप्त ओटीपी पासवर्ड से पहली बार लॉगिन करें। पासवर्ड बदलें, फिर 'आवेदन भरें' लिंक पर क्लिक करें, 'हैसियत प्रमाण पत्र' सेवा चुनें, संपत्ति और आवेदक का डेटा भरें, दस्तावेज अपलोड करके सबमिट करें।",
+      "bhojpuri": "edistrict.up.nic.in पे जाला आओ, 'सिटीजन लॉगिन' पे क्लिक करो, 'New users Register' पे क्लिक करके अपना व्यक्तिगत विवरण भर दيو, आरू प्राप्त ओटीपी पासवर्ड से पहिली बार लॉगिन करो। पासवर्ड बदल दيو, फिर 'आवेदन भरें' लिंक पे क्लिक करो, 'हैसियत प्रमाण पत्र' सेवा चुनो, संपत्ति आरू आवेदक का डेटा भरो, दस्तावेज अपलोड करके सबमिट कर दियो।"
     },
     "age_limit": "Adults (18+ Years owning property)",
     "contribution_type": "Online Certificate Issuance Service",
@@ -7853,19 +7857,23 @@
     },
     "benefits": {
       "english": "Continuous financial assistance and monthly monetary transfers under respective state pension categories following physical document validation.",
-      "hindi": "दस्तावेज़ सत्यापन के बाद संबंधित राज्य पेंशन श्रेणियों के तहत निरंतर वित्तीय सहायता और मासिक मौद्रिक हस्तांतरण।"
+      "hindi": "दस्तावेज़ सत्यापन के बाद संबंधित राज्य पेंशन श्रेणियों के तहत निरंतर वित्तीय सहायता और मासिक मौद्रिक हस्तांतरण।",
+      "bhojpuri": "दस्तावेज़ सत्यापन के बाद संबंधित राज्य पेंशन श्रेणियों के तहत निरंतर वित्तीय सहायता आउर मासिक मौद्रिक हस्तांतरण मिलेला।"
     },
     "eligibility": {
       "english": "Must be an eligible resident of Uttar Pradesh belonging to one of the target groups (widows, elderly, farmers, disabled persons) and verified as a left-out candidate in the government district survey.",
-      "hindi": "उत्तर प्रदेश का पात्र निवासी होना चाहिए जो लक्षित समूहों (विधवाओं, बुजुर्गों, किसानों, दिव्यांग व्यक्तियों) में से एक से संबंधित हो और सरकारी जिला सर्वेक्षण में छूटे हुए उम्मीदवार के रूप में सत्यापित हो।"
+      "hindi": "उत्तर प्रदेश का पात्र निवासी होना चाहिए जो लक्षित समूहों (विधवाओं, बुजुर्गों, किसानों, दिव्यांग व्यक्तियों) में से एक से संबंधित हो और सरकारी जिला सर्वेक्षण में छूटे हुए उम्मीदवार के रूप में सत्यापित हो।",
+      "bhojpuri": "उत्तर प्रदेश के पात्र निवासी बाड़न जे लक्षित समूह (विधवा, बुजुर्ग, किसान, दिव्यांग व्यक्ति) में से एक से संबंधित होखे चाहिए आ सरकारी जिला सर्वेक्षण में छूटे हुए उम्मीदवार के रूप में सत्यापित होखे चाहिए।"
     },
     "documents_required": {
       "english": "Identity Proof, Age Certificate/Proof, Death Certificate of Husband (for Widow Pension), Disability Certificate (for Viklang Pension), Income status records, and Bank Passbook.",
-      "hindi": "पहचान पत्र, आयु प्रमाण पत्र, पति का मृत्यु प्रमाण पत्र (विधवा पेंशन के लिए), दिव्यांगता प्रमाण पत्र (विकलांग पेंशन के लिए), आय का विवरण और बैंक पासबुक।"
+      "hindi": "पहचान पत्र, आयु प्रमाण पत्र, पति का मृत्यु प्रमाण पत्र (विधवा पेंशन के लिए), दिव्यांगता प्रमाण पत्र (विकलांग पेंशन के लिए), आय का विवरण और बैंक पासबुक।",
+      "bhojpuri": "पहिचान पत्र, आयु प्रमाण पत्र, पति के मृत्यु प्रमाण पत्र (विधवा पेंशन खातिर), दिव्यांगता प्रमाण पत्र (विकलांग पेंशन खातिर), आय का विवरण आ बैंक पासबुक।"
     },
     "application_process": {
       "english": "Identified individuals highlighted during the district surveys must fill out the integrated pension application form, present required credentials for physical validation, and await direct account activation.",
-      "hindi": "जिला सर्वेक्षण के दौरान चिन्हित किए गए पात्र व्यक्तियों को एकीकृत पेंशन आवेदन पत्र भरना होगा, सत्यापन के लिए आवश्यक दस्तावेज प्रस्तुत करने होंगे, जिसके बाद पेंशन राशि शुरू की जाएगी।"
+      "hindi": "जिला सर्वेक्षण के दौरान चिन्हित किए गए पात्र व्यक्तियों को एकीकृत पेंशन आवेदन पत्र भरना होगा, सत्यापन के लिए आवश्यक दस्तावेज प्रस्तुत करने होंगे, जिसके बाद पेंशन राशि शुरू की जाएगी।",
+      "bhojpuri": "जिला सर्वेक्षण के दौरान जिन लोगन के नाम चिन्हित कइल गइल बा, उहे लोगन के एकीकृत पेंशन आवेदन पत्र भरना पड़ी जाला, सत्यापन खातिर जरूरी कागजात देना पड़ी जाला, ओकर बाद पेंशन राशि मिलेला।"
     },
     "age_limit": "Varies by sub-category (Old Age: 60+ Years, Widows/Disabled: 18+ Years)",
     "contribution_type": "Direct Social Welfare Pension",
@@ -7893,19 +7901,23 @@
     },
     "benefits": {
       "english": "Pre-Matric scholarship raised to ₹3,000 per annum, direct financial fee reimbursement components mapped on a merit basis, and relaxed structural barriers for lower-income categories.",
-      "hindi": "प्री-मैट्रिक छात्रवृत्ति बढ़ाकर ₹3,000 प्रति वर्ष की गई, योग्यता के आधार पर सीधे शुल्क प्रतिपूर्ति का लाभ, और कम आय वाले परिवारों के बच्चों के लिए छात्रवृत्ति का दायरा बढ़ाया गया।"
+      "hindi": "प्री-मैट्रिक छात्रवृत्ति बढ़ाकर ₹3,000 प्रति वर्ष की गई, योग्यता के आधार पर सीधे शुल्क प्रतिपूर्ति का लाभ, और कम आय वाले परिवारों के बच्चों के लिए छात्रवृत्ति का दायरा बढ़ाया गया।",
+      "bhojpuri": "प्री-मैट्रिक छात्रवृत्ति बढ़ाके ₹3,000 प्रति वर्ष कर दिहल गइल बा, योग्यता के आधार प सीधे शुल्क प्रतिपूर्ति के लाभ मिलेला, आरू कम आय वाला परिवार के लइका खातिर छात्रवृत्ति के दायरा बढ़ा दिहल गइल बा।"
     },
     "eligibility": {
       "english": "Students belonging to SC/ST communities (with parallel extensions to general, OBC, and minority poor), studying in recognized institutions, with an expanded family annual income limit not exceeding ₹2.50 Lakh.",
-      "hindi": "एससी/एसटी समुदायों से संबंधित छात्र (सामान्य, ओबीसी और अल्पसंख्यक गरीबों के लिए भी समान विस्तार), जो मान्यता प्राप्त संस्थानों में पढ़ रहे हों, और जिनके परिवार की वार्षिक आय ₹2.50 लाख से अधिक न हो।"
+      "hindi": "एससी/एसटी समुदायों से संबंधित छात्र (सामान्य, ओबीसी और अल्पसंख्यक गरीबों के लिए भी समान विस्तार), जो मान्यता प्राप्त संस्थानों में पढ़ रहे हों, और जिनके परिवार की वार्षिक आय ₹2.50 लाख से अधिक न हो।",
+      "bhojpuri": "एससी/एसटी समुदाय से जुड़ल लइका, जे मान्यता प्राप्त संस्थान में पढ़त बाड़न, एही नाहीं बलुक ओबीसी आ अल्पसंख्यक गरीब लोग के लइका खातिर भी ई योजना बा, जिनके परिवार के वार्षिक आय ₹2.50 लाख से अधिक न होई, ओही लोग के लइका के ई योजना के लाभ मिलेला।"
     },
     "documents_required": {
       "english": "Caste Certificate, Income Certificate showing annual earnings up to ₹2.50 Lakh, Institutional enrollment proof / Fee receipt, Marksheets (for renewal/merit evaluation), Bank Account details.",
-      "hindi": "जाति प्रमाण पत्र, ₹2.50 लाख तक की वार्षिक आय दर्शाने वाला आय प्रमाण पत्र, संस्थान में नामांकन का प्रमाण / शुल्क रसीद, मार्कशीट (नवीनीकरण/योग्यता मूल्यांकन के लिए), बैंक खाते का विवरण।"
+      "hindi": "जाति प्रमाण पत्र, ₹2.50 लाख तक की वार्षिक आय दर्शाने वाला आय प्रमाण पत्र, संस्थान में नामांकन का प्रमाण / शुल्क रसीद, मार्कशीट (नवीनीकरण/योग्यता मूल्यांकन के लिए), बैंक खाते का विवरण।",
+      "bhojpuri": "जाति प्रमाण पत्र, ₹2.50 लाख तक की वार्षिक आय देखावे वाला आय प्रमाण पत्र, संस्थान में नाम लिखावे के प्रमाण / शुल्क रसीद, मार्कशीट (नवीनीकरण/योग्यता मूल्यांकन खातिर), बैंक खाते के विवरण।"
     },
     "application_process": {
       "english": "Students must submit applications online through the official state scholarship portal, lock their information, download the completed form, take a final printout, and complete validation protocols via their educational institutions.",
-      "hindi": "छात्रों को आधिकारिक राज्य छात्रवृत्ति पोर्टल के माध्यम से ऑनलाइन आवेदन जमा करना होगा, अपनी जानकारी सबमिट करके फॉर्म का अंतिम प्रिंटआउट लेना होगा और अपने शैक्षणिक संस्थानों के माध्यम से सत्यापन पूरा करना होगा।"
+      "hindi": "छात्रों को आधिकारिक राज्य छात्रवृत्ति पोर्टल के माध्यम से ऑनलाइन आवेदन जमा करना होगा, अपनी जानकारी सबमिट करके फॉर्म का अंतिम प्रिंटआउट लेना होगा और अपने शैक्षणिक संस्थानों के माध्यम से सत्यापन पूरा करना होगा।",
+      "bhojpuri": "लइका लोगन के ऑनलाइन आवेदन जमा करे के खातिर आधिकारिक राज्य छात्रवृत्ति पोर्टल के माध्यम से जाला बाड़न, अपनी जानकारी सबमिट कर के फॉर्म के अंतिम प्रिंटआउट ले लेवे के बाड़न आउर अपने शैक्षणिक संस्थान के माध्यम से सत्यापन पूरा करे के बाड़न।"
     },
     "age_limit": "Pre-Matric and Post-Matric school/college going age criteria",
     "contribution_type": "Direct Annual Educational Grant & Fee Reimbursement",
@@ -7933,19 +7945,23 @@
     },
     "benefits": {
       "english": "Financial marriage aid: Groom disabled (₹15,000), Bride disabled (₹20,000), Both partners disabled (₹35,000). Includes online status checking and online application re-print facilities.",
-      "hindi": "वित्तीय विवाह सहायता: दूल्हा दिव्यांग होने पर ₹15,000, दुल्हन दिव्यांग होने पर ₹20,000, और दोनों के दिव्यांग होने पर ₹35,000। इसमें ऑनलाइन स्थिति की जांच और फॉर्म री-प्रिंट की सुविधा शामिल है।"
+      "hindi": "वित्तीय विवाह सहायता: दूल्हा दिव्यांग होने पर ₹15,000, दुल्हन दिव्यांग होने पर ₹20,000, और दोनों के दिव्यांग होने पर ₹35,000। इसमें ऑनलाइन स्थिति की जांच और फॉर्म री-प्रिंट की सुविधा शामिल है।",
+      "bhojpuri": "वित्तीय विवाह सहायता मिलेला - दूल्हा दिव्यांग होय त ₹15,000, दुल्हन दिव्यांग होय त ₹20,000, आ दूनों दिव्यांग होयन त ₹35,000 मिलेला। एही योजना में ऑनलाइन स्थिति की जांच करीं आ फॉर्म री-प्रिंट करीं की सुविधा बाड़न।"
     },
     "eligibility": {
       "english": "Couples where at least one spouse is permanently disabled with a certified minimum disability rating of 40% or more, residing in Uttar Pradesh, with a legally valid marriage registration.",
-      "hindi": "ऐसे जोड़े जिनमें कम से कम एक जीवनसाथी न्यूनतम 40% या उससे अधिक की प्रमाणित दिव्यांगता के साथ स्थायी रूप से अक्षम हो, उत्तर प्रदेश का निवासी हो और जिनका विवाह कानूनी रूप से पंजीकृत हो।"
+      "hindi": "ऐसे जोड़े जिनमें कम से कम एक जीवनसाथी न्यूनतम 40% या उससे अधिक की प्रमाणित दिव्यांगता के साथ स्थायी रूप से अक्षम हो, उत्तर प्रदेश का निवासी हो और जिनका विवाह कानूनी रूप से पंजीकृत हो।",
+      "bhojpuri": "जे जोड़ी में से कम से कम एक जीवनसाथी 40% या ओसे अधिक की प्रमाणित दिव्यांगता के साथ स्थायी रूप से अक्षम बाड़न, उत्तर प्रदेश के निवासी बाड़न, आउर जिनका विवाह कानूनी रूप से पंजीकृत बा, ओही जोड़ी के लोग UP Divyangjan Shaadi-Vivaah Protsahan Puraskar Yojana खातिर आवेदन करीं सकेला।"
     },
     "documents_required": {
       "english": "Disability Certificate showing 40% or more disability, Official Marriage Certificate, Identity credentials of both partners, Resident Certificate, Bank Account Passbook.",
-      "hindi": "40% या अधिक दिव्यांगता दर्शाने वाला दिव्यांगता प्रमाण पत्र, आधिकारिक विवाह प्रमाण पत्र, दोनों पार्टनरों के पहचान पत्र, निवास प्रमाण पत्र, बैंक खाता पासबुक।"
+      "hindi": "40% या अधिक दिव्यांगता दर्शाने वाला दिव्यांगता प्रमाण पत्र, आधिकारिक विवाह प्रमाण पत्र, दोनों पार्टनरों के पहचान पत्र, निवास प्रमाण पत्र, बैंक खाता पासबुक।",
+      "bhojpuri": "40% या अधिक दिव्यांगता दर्शावे वाला दिव्यांगता प्रमाण पत्र, आधिकारिक विवाह प्रमाण पत्र, दुनु पार्टनर के पहचान पत्र, निवास प्रमाण पत्र, बैंक खाता पासबुक बाड़न।"
     },
     "application_process": {
       "english": "Visit divyangjan.upsdc.gov.in, click on the registration link to fill personal data and upload certificates to obtain a unique Registration Number. Next, log into the incomplete form tab using the registration number, fill the detailed dashboard, submit, and track status via the tracking window.",
-      "hindi": "divyangjan.upsdc.gov.in पर जाएं, पंजीकरण लिंक पर क्लिक करके व्यक्तिगत डेटा भरें और प्रमाणपत्र अपलोड करके एक विशिष्ट पंजीकरण संख्या प्राप्त करें। इसके बाद, 'पंजीकरण के बाद / अपूर्ण आवेदन पत्र भरने के लिए' लिंक पर क्लिक करें, पूरा फॉर्म भरकर सबमिट करें।"
+      "hindi": "divyangjan.upsdc.gov.in पर जाएं, पंजीकरण लिंक पर क्लिक करके व्यक्तिगत डेटा भरें और प्रमाणपत्र अपलोड करके एक विशिष्ट पंजीकरण संख्या प्राप्त करें। इसके बाद, 'पंजीकरण के बाद / अपूर्ण आवेदन पत्र भरने के लिए' लिंक पर क्लिक करें, पूरा फॉर्म भरकर सबमिट करें।",
+      "bhojpuri": "divyangjan.upsdc.gov.in पे जाला, पंजीकरण लिंक पे क्लिक करके अपना डेटा भरीं aur प्रमाणपत्र अपलोड करके एक विशिष्ट पंजीकरण संख्या मिलेला। ओकर बाद, 'पंजीकरण के बाद / अपूर्ण आवेदन पत्र भरने के लिए' लिंक पे क्लिक करीं, पूरा फॉर्म भरके सबमिट करीं।"
     },
     "age_limit": "Legal Marriage Age (Bride 18+ Years, Groom 21+ Years)",
     "contribution_type": "Direct Financial Incentive Grant",
@@ -7973,19 +7989,23 @@
     },
     "benefits": {
       "english": "Subsidies are segmented into: 25% or up to ₹6,25,000 for projects up to ₹2.5 million; 20% or minimum ₹6,25,000 for projects from ₹2.5 million to ₹5 million; 15% or up to ₹1 million for projects from ₹5 million to ₹1.5 billion; and 10% or up to ₹2 million for projects exceeding ₹1.5 billion. It converts to a full grant after 2 years.",
-      "hindi": "सब्सिडी के स्लैब: ₹25 लाख तक के प्रोजेक्ट पर 25% या अधिकतम ₹6,25,000; ₹25 लाख से ₹50 लाख तक के प्रोजेक्ट पर 20% या न्यूनतम ₹6,25,000; ₹50 लाख से ₹150 करोड़ तक के प्रोजेक्ट पर 15% या अधिकतम ₹10 लाख; और ₹150 करोड़ से ऊपर के प्रोजेक्ट पर 10% या अधिकतम ₹20 लाख। यह राशि 2 साल बाद ग्रांट में बदल जाती है।"
+      "hindi": "सब्सिडी के स्लैब: ₹25 लाख तक के प्रोजेक्ट पर 25% या अधिकतम ₹6,25,000; ₹25 लाख से ₹50 लाख तक के प्रोजेक्ट पर 20% या न्यूनतम ₹6,25,000; ₹50 लाख से ₹150 करोड़ तक के प्रोजेक्ट पर 15% या अधिकतम ₹10 लाख; और ₹150 करोड़ से ऊपर के प्रोजेक्ट पर 10% या अधिकतम ₹20 लाख। यह राशि 2 साल बाद ग्रांट में बदल जाती है।",
+      "bhojpuri": "सब्सिडी के स्लैब: ₹25 लाख तक के प्रोजेक्ट खातिर 25% या अधिकतम ₹6,25,000 मिलेला; ₹25 लाख से ₹50 लाख तक के प्रोजेक्ट खातिर 20% या न्यूनतम ₹6,25,000 मिलेला; ₹50 लाख से ₹150 करोड़ तक के प्रोजेक्ट खातिर 15% या अधिकतम ₹10 लाख मिलेला; और ₹150 करोड़ से ऊपर के प्रोजेक्ट खातिर 10% या अधिकतम ₹20 लाख मिलेला। ई राशि 2 साल बाद ग्रांट में बदल जाई, जे दीहल जाई।"
     },
     "eligibility": {
       "english": "Micro, Small, and Medium Enterprises (MSMEs) and newly established traditional enterprises setup in UP, with prioritizations and relaxed funding limits scaled for SC, ST, OBC, minority, women, and disabled individuals.",
-      "hindi": "उत्तर प्रदेश में स्थापित सूक्ष्म, लघु और मध्यम उद्यम (MSME) और नए पारंपरिक उद्यम। एससी, एसटी, ओबीसी, अल्पसंख्यक, महिला और दिव्यांग उद्यमियों के लिए विशेष प्राथमिकता और रियायतें दी गई हैं।"
+      "hindi": "उत्तर प्रदेश में स्थापित सूक्ष्म, लघु और मध्यम उद्यम (MSME) और नए पारंपरिक उद्यम। एससी, एसटी, ओबीसी, अल्पसंख्यक, महिला और दिव्यांग उद्यमियों के लिए विशेष प्राथमिकता और रियायतें दी गई हैं।",
+      "bhojpuri": "उत्तर प्रदेश में स्थापित सूक्ष्म, लघु और मध्यम उद्यम (MSME) आउर नए पारंपरिक उद्यम खातिर One District One Product (ODOP) सब्सिडी स्कीम बाड़न। एससी, एसटी, ओबीसी, अल्पसंख्यक, महिला आउर दिव्यांग उद्यमियों खातिर विशेष प्राथमिकता आउर रियायतें दीहल जाई।"
     },
     "documents_required": {
       "english": "Detailed Project Report (DPR), Bank Financing documents, Caste Certificate (if seeking the 5% personal contribution bracket), Identity card, Business location/District verification.",
-      "hindi": "विस्तृत परियोजना रिपोर्ट (DPR), बैंक लोन के दस्तावेज, जाति प्रमाणपत्र (5% व्यक्तिगत योगदान स्लैब का लाभ लेने के लिए), पहचान पत्र, व्यवसाय स्थान/जिला सत्यापन।"
+      "hindi": "विस्तृत परियोजना रिपोर्ट (DPR), बैंक लोन के दस्तावेज, जाति प्रमाणपत्र (5% व्यक्तिगत योगदान स्लैब का लाभ लेने के लिए), पहचान पत्र, व्यवसाय स्थान/जिला सत्यापन।",
+      "bhojpuri": "विस्तृत परियोजना रिपोर्ट (DPR), बैंक लोन के कागज, जाति प्रमाणपत्र (5% व्यक्तिगत योगदान स्लैब का लाभ लेने खातिर), पहचान पत्र, व्यवसाय स्थान/जिला सत्यापन।"
     },
     "application_process": {
       "english": "Beneficiaries are vetted and shortlisted at the district level by a specialized task force comprising representatives from local administration, institutional commercial bankers, and the industries department.",
-      "hindi": "लाभार्थियों का चयन जिला स्तर पर एक विशेष टास्क फ़ोर्स द्वारा किया जाता है, जिसमें स्थानीय प्रशासन, वाणिज्यिक बैंकर्स और उद्योग विभाग के प्रतिनिधि शामिल होते हैं।"
+      "hindi": "लाभार्थियों का चयन जिला स्तर पर एक विशेष टास्क फ़ोर्स द्वारा किया जाता है, जिसमें स्थानीय प्रशासन, वाणिज्यिक बैंकर्स और उद्योग विभाग के प्रतिनिधि शामिल होते हैं।",
+      "bhojpuri": "लाभार्थी के चयन जिला स्तर पे एक विशेष टास्क फ़ोर्स द्वारा होता बा, जेमें स्थानीय प्रशासन, वाणिज्यिक बैंकर्स आ उद्योग विभाग के प्रतिनिधि शामिल होता बाड़न।"
     },
     "age_limit": "Working Age / Adult Entrepreneurs (18+ Years)",
     "contribution_type": "Margin Money Subsidy convertible to absolute grant",
@@ -8013,19 +8033,23 @@
     },
     "benefits": {
       "english": "Complete exemption from educational/tuition fees from kindergarten through postgraduate university degrees in government institutions, structural academic regulatory frameworks, and specialized parent counseling.",
-      "hindi": "सरकारी संस्थानों में किंडरगार्टन से लेकर पोस्ट ग्रेजुएट डिग्री तक शैक्षणिक/ट्यूशन शुल्क से पूरी छूट, शैक्षणिक कैलेंडर का लाभ और माता-पिता की काउंसिलिंग।"
+      "hindi": "सरकारी संस्थानों में किंडरगार्टन से लेकर पोस्ट ग्रेजुएट डिग्री तक शैक्षणिक/ट्यूशन शुल्क से पूरी छूट, शैक्षणिक कैलेंडर का लाभ और माता-पिता की काउंसिलिंग।",
+      "bhojpuri": "सरकारी संस्थान में किंडरगार्टन से लेकर पोस्ट ग्रेजुएट डिग्री तक के शैक्षणिक/ट्यूशन शुल्क खातिर पूरा छूट मिलेला, शैक्षणिक कैलेंडर का लाभ भी मिलेला आउर माता-पिता के काउंसिलिंग के सुविधा भी दीहल जाई।"
     },
     "eligibility": {
       "english": "Students residing in Uttar Pradesh, enrolling across government educational academies, particularly those from economically backward and weaker sections of society.",
-      "hindi": "उत्तर प्रदेश में रहने वाले छात्र, जो सरकारी शैक्षणिक संस्थानों में प्रवेश ले रहे हों, विशेष रूप से समाज के आर्थिक रूप से पिछड़े और कमजोर वर्गों के बच्चे।"
+      "hindi": "उत्तर प्रदेश में रहने वाले छात्र, जो सरकारी शैक्षणिक संस्थानों में प्रवेश ले रहे हों, विशेष रूप से समाज के आर्थिक रूप से पिछड़े और कमजोर वर्गों के बच्चे।",
+      "bhojpuri": "उत्तर प्रदेश में रहे वाला लइका, जे सरकारी शैक्षणिक संस्थान में दाखिला ले रहे बाड़न, खास कर के समाज के आर्थिक रूप से पिछड़ल आ गरीब वर्ग के लइका।"
     },
     "documents_required": {
       "english": "Income Certificate proving economically backward class status, Resident Certificate of UP, School/College enrollment data, previous academic marksheets.",
-      "hindi": "आर्थिक रूप से पिछड़े वर्ग की स्थिति दर्शाने वाला आय प्रमाण पत्र, यूपी का निवास प्रमाण पत्र, स्कूल/कॉलेज में प्रवेश का विवरण, पिछली शैक्षणिक मार्कशीट।"
+      "hindi": "आर्थिक रूप से पिछड़े वर्ग की स्थिति दर्शाने वाला आय प्रमाण पत्र, यूपी का निवास प्रमाण पत्र, स्कूल/कॉलेज में प्रवेश का विवरण, पिछली शैक्षणिक मार्कशीट।",
+      "bhojpuri": "आर्थिक रूप से पिछड़े वर्ग की स्थिति दर्शाने वाला आय प्रमाण पत्र, यूपी का निवास प्रमाण पत्र, स्कूल/कॉलेज में दाखिला के बारे में जानकारी, पिछली शैक्षणिक मार्कशीट बाड़न।"
     },
     "application_process": {
       "english": "Applicable directly through rollouts in select municipal boundaries and institutional structures during the admission cycles in state universities and government schools.",
-      "hindi": "राज्य के विश्वविद्यालयों और सरकारी स्कूलों में प्रवेश प्रक्रिया के दौरान सीधे सरकारी स्कूलों/कॉलेजों में नामांकन के समय लागू होती है।"
+      "hindi": "राज्य के विश्वविद्यालयों और सरकारी स्कूलों में प्रवेश प्रक्रिया के दौरान सीधे सरकारी स्कूलों/कॉलेजों में नामांकन के समय लागू होती है।",
+      "bhojpuri": "राज्य के विश्वविद्यालयन में आ सरकारी स्कूलन में दाखिला लेवे के समय, सरकारी स्कूलन/कॉलेजन में नाम लिखावे के समय ई स्कीम लागू होला।"
     },
     "age_limit": "Kindergarten age to Post Graduate youth age brackets",
     "contribution_type": "100% Fee Exemption & Free Educational Assistance",
@@ -8053,19 +8077,23 @@
     },
     "benefits": {
       "english": "Annual health cover of ₹5 Lakh per family. Includes cashless hospitalization, pre and post-hospitalization costs, daycare treatments (e.g., laser operations, dental procedures), and institutional navigation support via specialized 'Arogya Mitras' deployed at medical nodes.",
-      "hindi": "प्रति परिवार ₹5 लाख का वार्षिक स्वास्थ्य कवर। इसमें कैशलेस अस्पताल में भर्ती, भर्ती से पहले और बाद का खर्च, डे-केयर उपचार (जैसे लेजर ऑपरेशन, दंत प्रक्रियाएं) और अस्पतालों में तैनात 'आरोग्य मित्रों' द्वारा सहायता शामिल है।"
+      "hindi": "प्रति परिवार ₹5 लाख का वार्षिक स्वास्थ्य कवर। इसमें कैशलेस अस्पताल में भर्ती, भर्ती से पहले और बाद का खर्च, डे-केयर उपचार (जैसे लेजर ऑपरेशन, दंत प्रक्रियाएं) और अस्पतालों में तैनात 'आरोग्य मित्रों' द्वारा सहायता शामिल है।",
+      "bhojpuri": "प्रति परिवार ₹5 लाख का वार्षिक स्वास्थ्य कवर मिलेला। एह में कैशलेस अस्पताल में भर्ती, भर्ती से पहिले आ भर्ती के बाद का खर्च, डे-केयर उपचार (जैसे लेजर ऑपरेशन, दंत प्रक्रियाएं) आ अस्पतालों में तैनात 'आरोग्य मित्रों' द्वारा सहायता शामिल बा।"
     },
     "eligibility": {
       "english": "Families whose names appear in the Socio-Economic Caste Census (SECC-2011) urban and rural deprivation logs, with parallel mapping surveys running to encompass left-out poor families.",
-      "hindi": "वे परिवार जिनका नाम सामाजिक-आर्थिक जाति जनगणना (SECC-2011) के शहरी और ग्रामीण डेटा में शामिल है, साथ ही सर्वेक्षण के आधार पर छूटे हुए गरीब परिवार।"
+      "hindi": "वे परिवार जिनका नाम सामाजिक-आर्थिक जाति जनगणना (SECC-2011) के शहरी और ग्रामीण डेटा में शामिल है, साथ ही सर्वेक्षण के आधार पर छूटे हुए गरीब परिवार।",
+      "bhojpuri": "ओही परिवार जेकर नाम सामाजिक-आर्थिक जाति जनगणना (SECC-2011) के शहरी आ ग्रामीण डेटा में शामिल बा, साथे सर्वेक्षण के आधार पर छूटल गरीब परिवार, ई सबके खातिर UP Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB-PMJAY) मिलेला।"
     },
     "documents_required": {
       "english": "SECC-2011 reference listing, Aadhaar Card, Ration Card, and PMJAY official Golden Card registration credentials.",
-      "hindi": "एसईसीसी-2011 संदर्भ सूची, आधार कार्ड, राशन कार्ड, और पीएमजेएवाई आधिकारिक गोल्डन कार्ड पंजीकरण क्रेडेंशियल।"
+      "hindi": "एसईसीसी-2011 संदर्भ सूची, आधार कार्ड, राशन कार्ड, और पीएमजेएवाई आधिकारिक गोल्डन कार्ड पंजीकरण क्रेडेंशियल।",
+      "bhojpuri": "सेक्ससी-2011 संदर्भ सूची, आधार कार्ड, राशन कार्ड, आरू पीएमजेएवाई आधिकारिक गोल्डन कार्ड पंजीकरण क्रेडेंशियल।"
     },
     "application_process": {
       "english": "Eligible citizens can trace their records in the urban/rural empanelled listing. Registered families visit empanelled hospitals where 'Arogya Mitras' verify identity details via the server database to issue or execute transactions through the Golden Card system.",
-      "hindi": "पात्र नागरिक ग्रामीण/शहरी लाभार्थी सूची में अपना नाम देख सकते हैं। इसके बाद अस्पताल में तैनात 'आरोग्य मित्र' डेटाबेस के माध्यम से पहचान सत्यापित करके गोल्डन कार्ड के जरिए कैशलेस इलाज की सुविधा प्रदान करते हैं।"
+      "hindi": "पात्र नागरिक ग्रामीण/शहरी लाभार्थी सूची में अपना नाम देख सकते हैं। इसके बाद अस्पताल में तैनात 'आरोग्य मित्र' डेटाबेस के माध्यम से पहचान सत्यापित करके गोल्डन कार्ड के जरिए कैशलेस इलाज की सुविधा प्रदान करते हैं।",
+      "bhojpuri": "पात्र नागरिक ग्रामीण/शहरी लाभार्थी सूची में अपना नाम देख सकेला। एही के बाद अस्पताल में तैनात 'आरोग्य मित्र' डेटाबेस के माध्यम से पहचान सत्यापित करके गोल्डन कार्ड के जरिए कैशलेस इलाज की सुविधा देला।"
     },
     "age_limit": "No age or family size restrictions",
     "contribution_type": "100% Cashless Premium-Free Health Insurance Cover",
@@ -8093,19 +8121,23 @@
     },
     "benefits": {
       "english": "Allotment of secure pucca housing flats across prime areas of Kanpur. Digital submission replaces the older system of purchasing physical bank forms worth ₹160, enabling direct confirmation for a minor verification fee of ₹5,000 via Google Maps-integrated spatial listings.",
-      "hindi": "कानपुर के प्रमुख क्षेत्रों में पक्के आवास फ्लैटों का आवंटन। पुराने ₹160 के कागजी बैंक फॉर्म की जगह मुफ्त ऑनलाइन फॉर्म की व्यवस्था, और ₹5,000 की ऑनलाइन बुकिंग राशि जमा करके गूगल मैप्स पर फ्लैट की लोकेशन देखने की सुविधा।"
+      "hindi": "कानपुर के प्रमुख क्षेत्रों में पक्के आवास फ्लैटों का आवंटन। पुराने ₹160 के कागजी बैंक फॉर्म की जगह मुफ्त ऑनलाइन फॉर्म की व्यवस्था, और ₹5,000 की ऑनलाइन बुकिंग राशि जमा करके गूगल मैप्स पर फ्लैट की लोकेशन देखने की सुविधा।",
+      "bhojpuri": "कानपुर के प्रमुख इलाका में पक्का आवास फ्लैट मिलेला। पुराना ₹160 के कागजी बैंक फॉर्म के जगह मुफ्त ऑनलाइन फॉर्म बा जेकरा खातिर कुछो ना देवे के पड़ी, आरू ₹5,000 की ऑनलाइन बुकिंग राशि जमा करीं तो गूगल मैप्स पे फ्लैट के लोकेशन देखल जाई।"
     },
     "eligibility": {
       "english": "Applicants from the Kanpur region who have already been officially evaluated, vetted, and selected under the pre-existing lists issued by SUDA / DUDA.",
-      "hindi": "कानपुर क्षेत्र के ऐसे आवेदक जो पहले से ही सूडा (SUDA) / डूड़ा (DUDA) द्वारा जारी की गई आधिकारिक लाभार्थी सूची में चयनित हैं।"
+      "hindi": "कानपुर क्षेत्र के ऐसे आवेदक जो पहले से ही सूडा (SUDA) / डूड़ा (DUDA) द्वारा जारी की गई आधिकारिक लाभार्थी सूची में चयनित हैं।",
+      "bhojpuri": "कानपुर क्षेत्र के एह जे आवेदक जे पहिले से ही सूडा (SUDA) / डूड़ा (DUDA) द्वारा जारी कीहल गइल आधिकारिक लाभार्थी सूची में चुनल गइल बाड़न।"
     },
     "documents_required": {
       "english": "SUDA / DUDA registration clearance reference, Identity proof, Existing Allottee credentials, bank details for online transactions.",
-      "hindi": "सूडा / डूड़ा पंजीकरण संदर्भ संख्या, पहचान पत्र, मौजूदा आवंटी क्रेडेंशियल, ऑनलाइन भुगतान के लिए बैंक का विवरण।"
+      "hindi": "सूडा / डूड़ा पंजीकरण संदर्भ संख्या, पहचान पत्र, मौजूदा आवंटी क्रेडेंशियल, ऑनलाइन भुगतान के लिए बैंक का विवरण।",
+      "bhojpuri": "सूडा / डूड़ा पंजीकरण संदर्भ संख्या, पहचान पत्र, मौजूदा आवंटी क्रेडेंशियल, ऑनलाइन भुगतान खातिर बैंक का विवरण।"
     },
     "application_process": {
       "english": "Visit kdaindia.co.in, click on the 'Online Property Information System' link. Select the green 'Existing Allottee Register' tab, input verified verification fields, execute 'Applicants Login' to fill out details, confirm geographic positioning on maps, pay the booking balance of ₹5,000 online, and await the public allocation lottery.",
-      "hindi": "kdaindia.co.in पर जाएं, 'Online Property Information System' लिंक पर क्लिक करें। हरे रंग के 'Existing Allottee Register' टैब को चुनें, अपनी जानकारी सत्यापित करें, 'Applicants Login' करके फॉर्म भरें और ₹5,000 का ऑनलाइन भुगतान करें।"
+      "hindi": "kdaindia.co.in पर जाएं, 'Online Property Information System' लिंक पर क्लिक करें। हरे रंग के 'Existing Allottee Register' टैब को चुनें, अपनी जानकारी सत्यापित करें, 'Applicants Login' करके फॉर्म भरें और ₹5,000 का ऑनलाइन भुगतान करें।",
+      "bhojpuri": "के डी ए इन्डिया डॉट को डॉट इन पे जाला, ऑनलाइन प्रॉपर्टी इनफार्मेशन सिस्टम लिंक पे क्लिक करीं। हरा रंग के एक्जिस्टिंग अल्लोटी रजिस्टर टैब के चुनें, अपनी जानकारी सत्यापित करीं, एप्लिकेंट्स लॉगिन करके फॉर्म भरीं और ₹5,000 का ऑनलाइन भुगतान करीं।"
     },
     "age_limit": "Adults (18+ Years)",
     "contribution_type": "Subsidized Institutional Residential Flat Allotment",
@@ -8133,19 +8165,23 @@
     },
     "benefits": {
       "english": "Eliminates physical office visits, incorporates secure OTP cellular verification, gives dashboard status updates, and ensures delivery within a stipulated timeframe under the Janhit Guarantee framework.",
-      "hindi": "सरकारी दफ्तरों के चक्कर काटने से मुक्ति, सुरक्षित ओटीपी मोबाइल सत्यापन, नागरिक डैशबोर्ड पर स्टेटस ट्रैकिंग और जनहित गारंटी के तहत निर्धारित समय सीमा में प्रमाणपत्र की प्राप्ति।"
+      "hindi": "सरकारी दफ्तरों के चक्कर काटने से मुक्ति, सुरक्षित ओटीपी मोबाइल सत्यापन, नागरिक डैशबोर्ड पर स्टेटस ट्रैकिंग और जनहित गारंटी के तहत निर्धारित समय सीमा में प्रमाणपत्र की प्राप्ति।",
+      "bhojpuri": "सरकारी दफ्तर के चक्कर काटे से मुक्ति मिलेला, सुरक्षित ओटीपी मोबाइल सत्यापन बा, नागरिक डैशबोर्ड पर स्टेटस ट्रैकिंग करीं सकेला आ जनहित गारंटी के तहत निर्धारित समय सीमा में प्रमाणपत्र की प्राप्ति हो जाई।"
     },
     "eligibility": {
       "english": "Any individual residing in Uttar Pradesh requiring an officially validated age assessment certificate for legal, educational, or professional usage.",
-      "hindi": "उत्तर प्रदेश में रहने वाला कोई भी व्यक्ति जिसे कानूनी, शैक्षणिक या व्यावसायिक उपयोग के लिए आधिकारिक रूप से सत्यापित आयु मूल्यांकन प्रमाणपत्र की आवश्यकता हो।"
+      "hindi": "उत्तर प्रदेश में रहने वाला कोई भी व्यक्ति जिसे कानूनी, शैक्षणिक या व्यावसायिक उपयोग के लिए आधिकारिक रूप से सत्यापित आयु मूल्यांकन प्रमाणपत्र की आवश्यकता हो।",
+      "bhojpuri": "उत्तर प्रदेश में रहे वाला कौनो भी आदमी जेकरा आयु प्रमाण पत्र के जरूरत बा कानूनी, शैक्षणिक या व्यावसायिक काम खातिर, ऊ अपना आयु के बारे में आधिकारिक रूप से सत्यापित आयु मूल्यांकन प्रमाणपत्र ले सकेला।"
     },
     "documents_required": {
       "english": "Supporting identity parameters, active cell number for OTP registration, and relevant medical/educational reference details if applicable.",
-      "hindi": "सहायक पहचान पत्र, ओटीपी पंजीकरण के लिए सक्रिय मोबाइल नंबर, और यदि लागू हो तो संबंधित चिकित्सा/शैक्षणिक संदर्भ विवरण।"
+      "hindi": "सहायक पहचान पत्र, ओटीपी पंजीकरण के लिए सक्रिय मोबाइल नंबर, और यदि लागू हो तो संबंधित चिकित्सा/शैक्षणिक संदर्भ विवरण।",
+      "bhojpuri": "सहायक पहचान पत्र, ओटीपी पंजीकरण खातिर सक्रिय मोबाइल नंबर, आरू जदी लागू हो त ओकरा संबंधित चिकित्सा/शैक्षणिक संदर्भ विवरण बाड़न।"
     },
     "application_process": {
       "english": "Visit up-health.in, access the 'Online Services' menu via up-health.in/online, select option number 9: 'Issuance of Age Certificate'. Enter foundational fields to register, verify the mobile OTP, log into the Citizen Dashboard, click 'Issuance of Age Certificate', complete the designated form fields, and click 'Save'.",
-      "hindi": "up-health.in पर जाएं, 'Online Services' लिंक (up-health.in/online) पर क्लिक करें, 9वें नंबर पर दिए गए 'Issuance of Age Certificate' लिंक का चयन करें। पंजीकरण के लिए आवश्यक विवरण भरें, मोबाइल ओटीपी सत्यापित करें, सिटीजन डैशबोर्ड पर लॉगिन करें, फॉर्म भरकर 'Save' बटन पर क्लिक करें।"
+      "hindi": "up-health.in पर जाएं, 'Online Services' लिंक (up-health.in/online) पर क्लिक करें, 9वें नंबर पर दिए गए 'Issuance of Age Certificate' लिंक का चयन करें। पंजीकरण के लिए आवश्यक विवरण भरें, मोबाइल ओटीपी सत्यापित करें, सिटीजन डैशबोर्ड पर लॉगिन करें, फॉर्म भरकर 'Save' बटन पर क्लिक करें।",
+      "bhojpuri": "up-health.in पे जाला बा, 'Online Services' लिंक (up-health.in/online) पे क्लिक करीं, 9वें नंबर पे दिहल 'Issuance of Age Certificate' लिंक के चयन करीं। पंजीकरण खातिर जरूरी जानकारी भरें, मोबाइल ओटीपी सत्यापित करीं, सिटीजन डैशबोर्ड पे लॉगिन करीं, फॉर्म भरके 'Save' बटन पे क्लिक करीं।"
     },
     "age_limit": "Open to all age groups",
     "contribution_type": "Online Civic Governance Service",
@@ -8173,19 +8209,23 @@
     },
     "benefits": {
       "english": "Block-level appointees receive a monthly salary of ₹30,000 (₹25,000 base + ₹5,000 allowance). State-level appointees receive ₹40,000 (₹30,000 base + ₹5,000 allowance as per textual documentation, styled up to ₹40,000 total). Provides professional governance training and social field experience.",
-      "hindi": "ब्लॉक स्तर के नियुक्त कर्मियों को ₹30,000 प्रति माह (₹25,000 वेतन + ₹5,000 भत्ता) और राज्य स्तर पर ₹40,000 प्रति माह मिलते हैं। इसके साथ ही शासन स्तर का प्रशिक्षण और सामाजिक कार्य का अनुभव प्राप्त होता है।"
+      "hindi": "ब्लॉक स्तर के नियुक्त कर्मियों को ₹30,000 प्रति माह (₹25,000 वेतन + ₹5,000 भत्ता) और राज्य स्तर पर ₹40,000 प्रति माह मिलते हैं। इसके साथ ही शासन स्तर का प्रशिक्षण और सामाजिक कार्य का अनुभव प्राप्त होता है।",
+      "bhojpuri": "ब्लॉक स्तर पर नियुक्त कर्मियों खातिर ₹30,000 प्रति माह मिलेला, जेहमे से ₹25,000 वेतन बा आ ₹5,000 भत्ता बा। राज्य स्तर पर ₹40,000 प्रति माह मिलेला। एही संगे शासन स्तर का प्रशिक्षण आ सामाजिक कार्य का अनुभव दीहल जाई।"
     },
     "eligibility": {
       "english": "Applicants must be between 21 to 40 years of age, hold a graduation degree in Engineering, Medical, or Arts streams, and possess at least 2 years of experience on any social platform.",
-      "hindi": "आवेदक की आयु 21 से 40 वर्ष के बीच होनी चाहिए, उनके पास इंजीनियरिंग, मेडिकल या आर्ट्स स्ट्रीम में स्नातक (Graduation) की डिग्री होनी चाहिए, और किसी भी सोशल प्लेटफॉर्म पर कम से कम 2 वर्ष का अनुभव होना अनिवार्य है।"
+      "hindi": "आवेदक की आयु 21 से 40 वर्ष के बीच होनी चाहिए, उनके पास इंजीनियरिंग, मेडिकल या आर्ट्स स्ट्रीम में स्नातक (Graduation) की डिग्री होनी चाहिए, और किसी भी सोशल प्लेटफॉर्म पर कम से कम 2 वर्ष का अनुभव होना अनिवार्य है।",
+      "bhojpuri": "आवेदक के उमिर 21 से 40 साल के बीच बा खातिर आवेदन करे में सक्षम बाड़न। उहो लोग के पास इंजीनियरिंग, मेडिकल या आर्ट्स स्ट्रीम में स्नातक (Graduation) की डिग्री मिलेला। एही ना, कोई भी सोशल प्लेटफॉर्म पर कम से कम 2 वर्ष का अनुभव होई अनिवार्य बा।"
     },
     "documents_required": {
       "english": "Graduation Degree Certificates (Engineering/Medical/Arts), Social Platform Experience Proof/Certificates, Age Proof, Identity Proof, Resident Certificate.",
-      "hindi": "स्नातक डिग्री प्रमाणपत्र (इंजीनियरिंग/मेडिकल/आर्ट्स), सोशल प्लेटफॉर्म पर कार्य का अनुभव प्रमाणपत्र, आयु प्रमाण पत्र, पहचान पत्र, निवास प्रमाण पत्र।"
+      "hindi": "स्नातक डिग्री प्रमाणपत्र (इंजीनियरिंग/मेडिकल/आर्ट्स), सोशल प्लेटफॉर्म पर कार्य का अनुभव प्रमाणपत्र, आयु प्रमाण पत्र, पहचान पत्र, निवास प्रमाण पत्र।",
+      "bhojpuri": "स्नातक डिग्री प्रमाणपत्र (इंजीनियरिंग/मेडिकल/आर्ट्स) बा, सोशल प्लेटफॉर्म पर काम का अनुभव प्रमाणपत्र मिलेला, उमिर प्रमाण पत्र, पहचान पत्र, निवास प्रमाण पत्र बाड़न।"
     },
     "application_process": {
       "english": "Candidates must apply online for the internship program once notification windows open. Selection is processed through a state-organized written examination monitored by a district committee under the leadership of the DM.",
-      "hindi": "अधिसूचना जारी होने पर उम्मीदवारों को इंटर्नशिप कार्यक्रम के लिए ऑनलाइन आवेदन करना होगा। चयन प्रक्रिया जिलाधिकारी (DM) के नेतृत्व में जिला समिति द्वारा आयोजित लिखित परीक्षा के माध्यम से पूरी की जाती है।"
+      "hindi": "अधिसूचना जारी होने पर उम्मीदवारों को इंटर्नशिप कार्यक्रम के लिए ऑनलाइन आवेदन करना होगा। चयन प्रक्रिया जिलाधिकारी (DM) के नेतृत्व में जिला समिति द्वारा आयोजित लिखित परीक्षा के माध्यम से पूरी की जाती है।",
+      "bhojpuri": "अधिसूचना जारी हो जाला पर, उम्मीदवार लोगन के इंटर्नशिप कार्यक्रम खातिर ऑनलाइन आवेदन करीं पड़ी. चयन प्रक्रिया जिलाधिकारी (DM) के नेतृत्व में जिला समिति द्वारा आयोजित लिखित परीक्षा के माध्यम से पूरा होई."
     },
     "age_limit": "21 to 40 Years",
     "contribution_type": "Paid Governance Internship & Contractual Allowance",
@@ -8213,19 +8253,23 @@
     },
     "benefits": {
       "english": "5 days of fully funded specialized vocational training, issuance of an official 'Recognition of Prior Learning (RPL)' certificate, and verified career placement linkages with corporate partners like Maruti India, Raymonds, Lava, Intex, and Yashoda Hospitals.",
-      "hindi": "5 दिनों का मुफ्त विशिष्ट व्यावसायिक प्रशिक्षण, आधिकारिक 'रिकॉग्निशन ऑफ प्रायर लर्निंग (RPL)' प्रमाणपत्र, और मारुति इंडिया, रेमंड्स, लावा, इनटेक्स और यशोदा हॉस्पिटल्स जैसी बड़ी कंपनियों में रोजगार के अवसर।"
+      "hindi": "5 दिनों का मुफ्त विशिष्ट व्यावसायिक प्रशिक्षण, आधिकारिक 'रिकॉग्निशन ऑफ प्रायर लर्निंग (RPL)' प्रमाणपत्र, और मारुति इंडिया, रेमंड्स, लावा, इनटेक्स और यशोदा हॉस्पिटल्स जैसी बड़ी कंपनियों में रोजगार के अवसर।",
+      "bhojpuri": "5 दिन के मुफ्त विशिष्ट व्यावसायिक प्रशिक्षण मिलेला, आधिकारिक 'रिकॉग्निशन ऑफ प्रायर लर्निंग (RPL)' प्रमाणपत्र दीहल जाई, आरू मारुति इंडिया, रेमंड्स, लावा, इनटेक्स आरू यशोदा हॉस्पिटल्स जैसन बड़का कंपनी में रोजगार के अवसर बाड़न।"
     },
     "eligibility": {
       "english": "Educated but unemployed youths, craftsmen, mechanics, or tradesmen residing within the targeted districts of Uttar Pradesh.",
-      "hindi": "उत्तर प्रदेश के लक्षित जिलों में रहने वाले शिक्षित लेकिन बेरोजगार युवा, शिल्पकार, मैकेनिक या ट्रेडमैन।"
+      "hindi": "उत्तर प्रदेश के लक्षित जिलों में रहने वाले शिक्षित लेकिन बेरोजगार युवा, शिल्पकार, मैकेनिक या ट्रेडमैन।",
+      "bhojpuri": "उत्तर प्रदेश के लक्षित जिलन के अंदर रहे वाला पढ़ल-लिखल लेकिन बेरोजगार जवान, शिल्पकार, मैकेनिक या ट्रेडमैन।"
     },
     "documents_required": {
       "english": "Educational Qualification Certificates / ITI records (if applicable), Identity Proof (Aadhaar Card), Resident Proof, Passport size photographs.",
-      "hindi": "शैक्षणिक योग्यता प्रमाणपत्र / आईटीआई रिकॉर्ड (यदि लागू हो), पहचान पत्र (आधार कार्ड), निवास प्रमाण पत्र, पासपोर्ट साइज फोटो।"
+      "hindi": "शैक्षणिक योग्यता प्रमाणपत्र / आईटीआई रिकॉर्ड (यदि लागू हो), पहचान पत्र (आधार कार्ड), निवास प्रमाण पत्र, पासपोर्ट साइज फोटो।",
+      "bhojpuri": "शैक्षणिक योग्यता प्रमाणपत्र / आईटीआई रिकॉर्ड (यदि लागू हो) बा, पहचान पत्र (आधार कार्ड) बा, निवास प्रमाण पत्र बा, पासपोर्ट साइज फोटो बा खातिर आवेदन करीं।"
     },
     "application_process": {
       "english": "Enrollment is facilitated online or via designated skill connect apps launched under the mission (Skill Connect, Skill Mitra, and Mobile Monitoring System). Offline drives are held in collaboration with state ITI admission hubs under the 'ITI Chalo' initiative.",
-      "hindi": "नामांकन ऑनलाइन या मिशन के तहत शुरू किए गए विशेष मोबाइल ऐप (Skill Connect, Skill Mitra) के माध्यम से किया जाता है। इसके अलावा 'आईटीआई चलो' पहल के तहत भी युवाओं को जोड़ा जाता है।"
+      "hindi": "नामांकन ऑनलाइन या मिशन के तहत शुरू किए गए विशेष मोबाइल ऐप (Skill Connect, Skill Mitra) के माध्यम से किया जाता है। इसके अलावा 'आईटीआई चलो' पहल के तहत भी युवाओं को जोड़ा जाता है।",
+      "bhojpuri": "नामांकन ऑनलाइन या मिशन के तहत शुरू किए गए विशेष मोबाइल ऐप (Skill Connect, Skill Mitra) के माध्यम से होता बा। इसके अलावा 'आईटीआई चलो' पहल के तहत युवाओं को जोड़ल जाला बा।"
     },
     "age_limit": "Youth / Working Age Criteria",
     "contribution_type": "Free Skill Development & Corporate Placement Linkage",
@@ -8254,19 +8298,23 @@
     },
     "benefits": {
       "english": "Daily freshly cooked hot nutritional meals at local Anganwadi centers, free seasonal fruits distributed daily to women, and a specialized 500-gram packet of pure Desi Ghee allocated for severely malnourished children.",
-      "hindi": "स्थानीय आंगनवाड़ी केंद्रों पर दैनिक ताजा पका हुआ पौष्टिक भोजन, महिलाओं को प्रतिदिन मौसमी फल, और अत्यधिक कुपोषित बच्चों के लिए 500 ग्राम शुद्ध देसी घी।"
+      "hindi": "स्थानीय आंगनवाड़ी केंद्रों पर दैनिक ताजा पका हुआ पौष्टिक भोजन, महिलाओं को प्रतिदिन मौसमी फल, और अत्यधिक कुपोषित बच्चों के लिए 500 ग्राम शुद्ध देसी घी।",
+      "bhojpuri": "स्थानीय आंगनवाड़ी केंद्र पर दिन-दिन ताजा पकावल भोजन मिलेला, महिला लोगन के प्रतिदिन मौसमी फल मिलेला, आरू अत्यधिक कुपोषित लइका लोगन खातिर 500 ग्राम शुद्ध देसी घी मिलेला।"
     },
     "eligibility": {
       "english": "Pregnant women, lactating mothers, and under-nourished/severely underweight children aged between 6 months to 6 years residing in Uttar Pradesh.",
-      "hindi": "उत्तर प्रदेश में रहने वाली गर्भवती महिलाएं, स्तनपान कराने वाली माताएं और 6 महीने से 6 वर्ष की आयु के कुपोषित या अत्यधिक कम वजन वाले बच्चे।"
+      "hindi": "उत्तर प्रदेश में रहने वाली गर्भवती महिलाएं, स्तनपान कराने वाली माताएं और 6 महीने से 6 वर्ष की आयु के कुपोषित या अत्यधिक कम वजन वाले बच्चे।",
+      "bhojpuri": "उत्तर प्रदेश में रहे वाली गर्भवती इयार महिला लोग, स्तनपान करावे वाली माई लोग आ 6 महीना से 6 वर्ष की आयु के कुपोषित या अत्यधिक कम वजन वाला लइका लोग।"
     },
     "documents_required": {
       "english": "Anganwadi Center Enrollment records, ICDS Supplementary Nutrition Programme card, Child's Age proof/Birth details, Mother's Identity proof.",
-      "hindi": "आंगनवाड़ी केंद्र पंजीकरण रिकॉर्ड, आईसीडीएस (ICDS) पूरक पोषण कार्यक्रम कार्ड, बच्चे की आयु का प्रमाण/जन्म विवरण, माता का पहचान पत्र।"
+      "hindi": "आंगनवाड़ी केंद्र पंजीकरण रिकॉर्ड, आईसीडीएस (ICDS) पूरक पोषण कार्यक्रम कार्ड, बच्चे की आयु का प्रमाण/जन्म विवरण, माता का पहचान पत्र।",
+      "bhojpuri": "आंगनबाड़ी केंद्र पंजीकरण रिकॉर्ड, आईसीडीएस (ICDS) पूरक पोषण कार्यक्रम कार्ड, लइका के उमिर का प्रमाण/जनम विवरण, माई का पहचान पत्र।"
     },
     "application_process": {
       "english": "Beneficiaries are physically tracked and registered at their localized neighborhood Anganwadi Centers by ICDS workers based on regular weight monitoring logs.",
-      "hindi": "लाभार्थियों की पहचान और पंजीकरण स्थानीय आंगनवाड़ी केंद्रों पर नियमित वजन निगरानी और आईसीडीएस (ICDS) कार्यकर्ताओं के माध्यम से किया जाता है।"
+      "hindi": "लाभार्थियों की पहचान और पंजीकरण स्थानीय आंगनवाड़ी केंद्रों पर नियमित वजन निगरानी और आईसीडीएस (ICDS) कार्यकर्ताओं के माध्यम से किया जाता है।",
+      "bhojpuri": "लाभार्थियों के पहचान आउर पंजीकरण स्थानीय आंगनवाड़ी केंद्र पर नियमित वजन निगरानी आउर आईसीडीएस (ICDS) कार्यकर्ता लोग के माध्यम से होत बा।"
     },
     "age_limit": "Children: 6 Months to 6 Years; Mothers: No age restriction",
     "contribution_type": "Free Nutritional Dietary Supplements & Cooked Meals",
@@ -8294,19 +8342,23 @@
     },
     "benefits": {
       "english": "Monthly cash pension of ₹500 disbursed on a quarterly basis directly into the verified savings bank account. Enables transparent online tracking and access to updated localized beneficiary lists.",
-      "hindi": "₹500 प्रति माह की नकद पेंशन जो सीधे बैंक खाते में तिमाही आधार पर भेजी जाती है, साथ ही ऑनलाइन स्टेटस ट्रैकिंग की सुविधा।"
+      "hindi": "₹500 प्रति माह की नकद पेंशन जो सीधे बैंक खाते में तिमाही आधार पर भेजी जाती है, साथ ही ऑनलाइन स्टेटस ट्रैकिंग की सुविधा।",
+      "bhojpuri": "₹500 प्रति माह के नकद पेंशन मिलेला, जे सीधे बैंक खाता में तिमाही आधार पर जाला। साथे ऑनलाइन स्टेटस ट्रैकिंग के सुविधा बाड़न, जे खातिर लोग अपना पेंशन के स्टेटस देख सकेला।"
     },
     "eligibility": {
       "english": "Must be a resident of Uttar Pradesh, above 18 years of age, possessing a certified disability of 40% or more, listed in the official BPL indicators, and not enrolled in any other state pension program.",
-      "hindi": "उत्तर प्रदेश का निवासी होना चाहिए, आयु 18 वर्ष से अधिक हो, प्रमाणित दिव्यांगता 40% या उससे अधिक हो, नाम बीपीएल सूची में हो और किसी अन्य राज्य पेंशन योजना का लाभ न मिल रहा हो।"
+      "hindi": "उत्तर प्रदेश का निवासी होना चाहिए, आयु 18 वर्ष से अधिक हो, प्रमाणित दिव्यांगता 40% या उससे अधिक हो, नाम बीपीएल सूची में हो और किसी अन्य राज्य पेंशन योजना का लाभ न मिल रहा हो।",
+      "bhojpuri": "उप्र के निवासी बाड़न, उमिर 18 वर्ष से उपर बा, प्रमाणित दिव्यांगता 40% या ओकरे उपर बा, नाम बीपीएल सूची में बा, आ कोनो दूसर राज्य पेंशन योजना के लाभ न मिलेला, त खातिर ई योजना मिलेला।"
     },
     "documents_required": {
       "english": "Recent Passport Size Photograph (max 20kb JPEG), Disability Certificate detailing type and percentage (max 100kb PDF), Income Certificate (max 100kb PDF), Bank Passbook copy (max 100kb PDF), Birth/Age Certificate (max 100kb PDF), Identity Proof (Voter Card / Aadhaar Card / Ration Card).",
-      "hindi": "हालिया पासपोर्ट साइज फोटो (अधिकतम 20kb JPEG), दिव्यांगता प्रमाण पत्र (अधिकतम 100kb PDF), आय प्रमाण पत्र (अधिकतम 100kb PDF), बैंक पासबुक (अधिकतम 100kb PDF), जन्म/आयु प्रमाण पत्र, पहचान पत्र (आधार या वोटर कार्ड)।"
+      "hindi": "हालिया पासपोर्ट साइज फोटो (अधिकतम 20kb JPEG), दिव्यांगता प्रमाण पत्र (अधिकतम 100kb PDF), आय प्रमाण पत्र (अधिकतम 100kb PDF), बैंक पासबुक (अधिकतम 100kb PDF), जन्म/आयु प्रमाण पत्र, पहचान पत्र (आधार या वोटर कार्ड)।",
+      "bhojpuri": "नवका पासपोर्ट साइज फोटो (अधिकतम 20kb JPEG) बा, दिव्यांगता प्रमाण पत्र (अधिकतम 100kb PDF) बा, आय प्रमाण पत्र (अधिकतम 100kb PDF) बा, बैंक पासबुक (अधिकतम 100kb PDF) बा, जन्म/आयु प्रमाण पत्र बा, आइडेंटिटी कार्ड (आधार कार्ड या वोटर कार्ड) बा।"
     },
     "application_process": {
       "english": "Visit sspy-up.gov.in, click 'Handicap Pension' (दिव्यांग पेंशन), select 'Apply Online', and open the 'New Entry Form'. Input personal, bank, income, and disability fields, click 'Save', then review via 'Edit Saved Form / Final Submit'. Print the completed form and physically submit it to the DSWO / DPO / DHWO office within 1 month of final online submission. Applications can be tracked after registering a password on the application tracking page.",
-      "hindi": "sspy-up.gov.in पर जाएं, 'दिव्यांग पेंशन' पर क्लिक करें, 'ऑनलाइन आवेदन करें' चुनें और 'New Entry Form' खोलें। व्यक्तिगत, बैंक, आय और दिव्यांगता का विवरण भरें, सेव करें और 'Final Submit' करें। फॉर्म का प्रिंटआउट लेकर 1 महीने के भीतर जिला समाज कल्याण अधिकारी (DSWO/DHWO) कार्यालय में भौतिक रूप से जमा करें।"
+      "hindi": "sspy-up.gov.in पर जाएं, 'दिव्यांग पेंशन' पर क्लिक करें, 'ऑनलाइन आवेदन करें' चुनें और 'New Entry Form' खोलें। व्यक्तिगत, बैंक, आय और दिव्यांगता का विवरण भरें, सेव करें और 'Final Submit' करें। फॉर्म का प्रिंटआउट लेकर 1 महीने के भीतर जिला समाज कल्याण अधिकारी (DSWO/DHWO) कार्यालय में भौतिक रूप से जमा करें।",
+      "bhojpuri": "गइल जाईं sspy-up.gov.in पे, 'दिव्यांग पेंशन' पे क्लिक करीं, 'ऑनलाइन आवेदन करें' चुनीं aur 'New Entry Form' खोलीं। व्यक्तिगत, बैंक, आय aur दिव्यांगता का विवरण भरीं, सेव करीं aur 'Final Submit' करीं। फॉर्म का प्रिंटआउट लेके 1 महीना के भीतर जिला समाज कल्याण अधिकारी (DSWO/DHWO) कार्यालय में भौतिक रूप से जमा करीं।"
     },
     "age_limit": "18 Years and above",
     "contribution_type": "Direct Social Security Cash Pension",
@@ -8334,19 +8386,23 @@
     },
     "benefits": {
       "english": "Monthly pension support of ₹800 distributed transparently into checking accounts. Highly relaxed qualification limits ensuring wide institutional coverage for peripheral poor families.",
-      "hindi": "₹800 प्रति माह की वित्तीय सहायता पेंशन सीधे बैंक खाते में, साथ ही शिथिल नियमों के कारण अधिक बुजुर्गों को पात्रता का लाभ।"
+      "hindi": "₹800 प्रति माह की वित्तीय सहायता पेंशन सीधे बैंक खाते में, साथ ही शिथिल नियमों के कारण अधिक बुजुर्गों को पात्रता का लाभ।",
+      "bhojpuri": "₹800 प्रति माह की वित्तीय सहायता पेंशन सीधे बैंक खाते में मिलेला, साथे ढीला नियम के कारण बहुते बुजुर्गन के पास पात्रता के लाभ बाड़न।"
     },
     "eligibility": {
       "english": "Must be a legal resident of Uttar Pradesh, aged 60 years or more, with name appearing within the Indian Final BPL List (SECC 2011 Data), matching baseline economic weakness benchmarks.",
-      "hindi": "उत्तर प्रदेश का स्थायी निवासी होना चाहिए, आयु 60 वर्ष या उससे अधिक हो, और नाम बीपीएल सूची (SECC 2011 डेटा) में शामिल हो।"
+      "hindi": "उत्तर प्रदेश का स्थायी निवासी होना चाहिए, आयु 60 वर्ष या उससे अधिक हो, और नाम बीपीएल सूची (SECC 2011 डेटा) में शामिल हो।",
+      "bhojpuri": "उत्तर प्रदेश के स्थायी निवासी बाड़न, उमिर 60 वर्ष या ओकरा से उपर होई, आउर नाम बीपीएल सूची (SECC 2011 डेटा) में शामिल होई।"
     },
     "documents_required": {
       "english": "BPL List reference/SECC 2011 Data verification code, Income Certificate matching central norms, Birth or Age Verification Certificate, Resident Certificate, Identity Card (Aadhaar Card), Savings Bank Passbook.",
-      "hindi": "बीपीएल सूची संदर्भ/SECC 2011 डेटा कोड, आय प्रमाण पत्र, आयु/जन्म प्रमाण पत्र, निवास प्रमाण पत्र, पहचान पत्र (आधार कार्ड) और बैंक पासबुक।"
+      "hindi": "बीपीएल सूची संदर्भ/SECC 2011 डेटा कोड, आय प्रमाण पत्र, आयु/जन्म प्रमाण पत्र, निवास प्रमाण पत्र, पहचान पत्र (आधार कार्ड) और बैंक पासबुक।",
+      "bhojpuri": "बीपीएल सूची संदर्भ/SECC 2011 डेटा कोड, आमदनी प्रमाण पत्र, उमिर/जनम प्रमाण पत्र, निवास प्रमाण पत्र, पहचान पत्र (आधार कार्ड) आउर बैंक पासबुक मिलेला बुजुर्ग लोगन खातिर।"
     },
     "application_process": {
       "english": "Online application forms are invited through the official UP government portal or the dedicated integrated pension directory (sspy-up.gov.in). Users input foundational data structures and link savings banks to confirm direct benefit transfers.",
-      "hindi": "आवेदन फॉर्म आधिकारिक यूपी सरकारी पोर्टल या एकीकृत पेंशन पोर्टल (sspy-up.gov.in) के माध्यम से ऑनलाइन भरे जा सकते हैं, जहां बैंक खातों को सीधे डीबीटी (DBT) के लिए लिंक किया जाता है।"
+      "hindi": "आवेदन फॉर्म आधिकारिक यूपी सरकारी पोर्टल या एकीकृत पेंशन पोर्टल (sspy-up.gov.in) के माध्यम से ऑनलाइन भरे जा सकते हैं, जहां बैंक खातों को सीधे डीबीटी (DBT) के लिए लिंक किया जाता है।",
+      "bhojpuri": "आवेदन फॉर्म आधिकारिक यूपी सरकारी पोर्टल या एकीकृत पेंशन पोर्टल (sspy-up.gov.in) के माध्यम से ऑनलाइन भरल जा सकत बा, जहां बैंक खाता के सीधे डीबीटी (DBT) खातिर लिंक कइल जाला।"
     },
     "age_limit": "60 Years and above",
     "contribution_type": "Direct Social Welfare Cash Pension",
@@ -8374,19 +8430,23 @@
     },
     "benefits": {
       "english": "100%, principal-capped, or 50% tiered waiver on pending loan interests based on the historical date of borrowing, legal resolution of Non-Performing Asset (NPA) flags, and direct agricultural credit relief.",
-      "hindi": "ऋण लेने की अवधि के आधार पर ब्याज में 100%, मूलधन के बराबर या 50% तक की छूट, और एनपीए (NPA) बैंक खातों का निपटारा।"
+      "hindi": "ऋण लेने की अवधि के आधार पर ब्याज में 100%, मूलधन के बराबर या 50% तक की छूट, और एनपीए (NPA) बैंक खातों का निपटारा।",
+      "bhojpuri": "ऋण लेवे के समय के आधार पे ब्याज में 100%, मूलधन के बराबर या 50% तक के छूट, आ एनपीए (NPA) बैंक खाता के निपटारा मिलेला।"
     },
     "eligibility": {
       "english": "Small and marginal institutional farmers in Uttar Pradesh who borrowed from the Uttar Pradesh Co-operative Rural Development Bank prior to 31 March 2012 and face unaffordable interest payments.",
-      "hindi": "उत्तर प्रदेश के वे छोटे और सीमांत किसान जिन्होंने 31 मार्च 2012 से पहले उत्तर प्रदेश सहकारी ग्राम विकास बैंक से ऋण लिया था और ब्याज चुकाने में असमर्थ हैं।"
+      "hindi": "उत्तर प्रदेश के वे छोटे और सीमांत किसान जिन्होंने 31 मार्च 2012 से पहले उत्तर प्रदेश सहकारी ग्राम विकास बैंक से ऋण लिया था और ब्याज चुकाने में असमर्थ हैं।",
+      "bhojpuri": "उत्तर प्रदेश के वो छोटे आउर सीमांत किसान जे 31 मार्च 2012 से पहिले उत्तर प्रदेश सहकारी ग्राम विकास बैंक से कर्ज लेहले बाड़न आउर ब्याज चुकाए में असमर्थ बाड़न।"
     },
     "documents_required": {
       "english": "Co-operative Rural Development Bank Loan Passbook / Account details, Land Ownership Records (Khatauni), Identity proof (Aadhaar Card), Small/Marginal Farmer Certificate.",
-      "hindi": "सहकारी ग्राम विकास बैंक ऋण पासबुक / खाता विवरण, भूमि स्वामित्व रिकॉर्ड (खतौनी), पहचान पत्र (आधार कार्ड), छोटा/सीमांत किसान प्रमाणपत्र।"
+      "hindi": "सहकारी ग्राम विकास बैंक ऋण पासबुक / खाता विवरण, भूमि स्वामित्व रिकॉर्ड (खतौनी), पहचान पत्र (आधार कार्ड), छोटा/सीमांत किसान प्रमाणपत्र।",
+      "bhojpuri": "सहकारी ग्राम विकास बैंक के ऋण पासबुक/खाता विवरण, जमीन के मालिकाना हक के रिकॉर्ड (खतौनी), पहचान पत्र (आधार कार्ड), छोटा/सीमांत किसान के प्रमाणपत्र बाड़न।"
     },
     "application_process": {
       "english": "Implemented in a phased manner across local cooperative bank branches. Farmers visit their respective Co-operative Rural Development Bank branch nodes to verify eligibility parameters against the government data clearance lists and file for account settlement.",
-      "hindi": "यह योजना स्थानीय सहकारी बैंक शाखाओं के माध्यम से चरणों में लागू की जाती है। किसान अपने बैंक खाते के विवरण के साथ संबंधित शाखा में जाकर पात्रता सूची चेक करके खाता निपटान के लिए आवेदन कर सकते हैं।"
+      "hindi": "यह योजना स्थानीय सहकारी बैंक शाखाओं के माध्यम से चरणों में लागू की जाती है। किसान अपने बैंक खाते के विवरण के साथ संबंधित शाखा में जाकर पात्रता सूची चेक करके खाता निपटान के लिए आवेदन कर सकते हैं।",
+      "bhojpuri": "ई योजना स्थानीय सहकारी बैंक शाखाओं के माध्यम से कइ चरण में लागू कइल जाला। किसान अपना बैंक खाता के विवरण के साथ संबंधित शाखा में जाके पात्रता सूची चेक करके खाता निपटान खातिर आवेदन कर सकेला।"
     },
     "age_limit": "Adult Farmers (18+ Years)",
     "contribution_type": "One-Time Institutional Loan Interest Waiver",
@@ -8415,19 +8475,23 @@
     },
     "benefits": {
       "english": "Monthly pension of ₹300 disbursed quarterly directly via Direct Benefit Transfer (DBT). Universal verification format access without arbitrary age caps, alongside centralized tracking updates via sspy-up.gov.in.",
-      "hindi": "₹300 प्रति माह की पेंशन जो सीधे बैंक खाते में तिमाही आधार पर भेजी जाती है, और बिना किसी आयु सीमा के जीवनभर सामाजिक सुरक्षा।"
+      "hindi": "₹300 प्रति माह की पेंशन जो सीधे बैंक खाते में तिमाही आधार पर भेजी जाती है, और बिना किसी आयु सीमा के जीवनभर सामाजिक सुरक्षा।",
+      "bhojpuri": "₹300 प्रति माह की पेंशन जो सीधे बैंक खाते में तिमाही आधार पर भेजल जाला, एही तो बिना कोनो आयु सीमा के जीवनभर सामाजिक सुरक्षा मिलेला।"
     },
     "eligibility": {
       "english": "Must be a widow residing in Uttar Pradesh, has not entered into remarriage, whose name is explicitly integrated within the all India final BPL database, and holds no parallel state pension accounts.",
-      "hindi": "उत्तर प्रदेश की निवासी विधवा महिला होना चाहिए, जिन्होंने पुनर्विवाह न किया हो, और जिनका नाम बीपीएल सूची में शामिल हो।"
+      "hindi": "उत्तर प्रदेश की निवासी विधवा महिला होना चाहिए, जिन्होंने पुनर्विवाह न किया हो, और जिनका नाम बीपीएल सूची में शामिल हो।",
+      "bhojpuri": "उत्तर प्रदेश के निवासी विधवा ई महिला बाड़नी, जिनकर पुनर्विवाह नइहो कइल गा, आ जिनका नाम बीपीएल सूची में शामिल बा, ओही लोगन के लाभ मिलेला।"
     },
     "documents_required": {
       "english": "Death Certificate of Husband (max 100kb PDF), Birth / Age Certificate (max 100kb PDF), Identity Proof (Voter Card / Aadhaar Card / Ration Card), Bank Passbook (max 100kb PDF), Income Certificate (max 100kb PDF), Recent Passport Size Photograph (max 20kb JPEG), details regarding total children and dependency stability.",
-      "hindi": "पति का मृत्यु प्रमाण पत्र (अधिकतम 100kb PDF), आयु/जन्म प्रमाण पत्र, पहचान पत्र (आधार या वोटर कार्ड), बैंक पासबुक (अधिकतम 100kb PDF), आय प्रमाण पत्र (अधिकतम 100kb PDF), और हालिया पासपोर्ट साइज फोटो।"
+      "hindi": "पति का मृत्यु प्रमाण पत्र (अधिकतम 100kb PDF), आयु/जन्म प्रमाण पत्र, पहचान पत्र (आधार या वोटर कार्ड), बैंक पासबुक (अधिकतम 100kb PDF), आय प्रमाण पत्र (अधिकतम 100kb PDF), और हालिया पासपोर्ट साइज फोटो।",
+      "bhojpuri": "पति के मृत्यु प्रमाण पत्र (अधिकतम 100kb PDF) बा, आयु/जन्म प्रमाण पत्र बा, पहचान पत्र (आधार या वोटर कार्ड) बा, बैंक पासबुक (अधिकतम 100kb PDF) बा, आय प्रमाण पत्र (अधिकतम 100kb PDF) बा, आउर हालिया पासपोर्ट साइज फोटो बा मिलेला ।"
     },
     "application_process": {
       "english": "Visit sspy-up.gov.in, choose 'Widow Pension' (निराश्रित महिला पेंशन), click 'Apply Online' and access the 'New Entry Form'. Complete the personal, bank, and income fields, click 'Save', verify information under 'Edit Saved Form / Final Submit', and execute submission. Take a hardcopy printout and physically deliver it to the local DSWO / DPO / DHWO office within 1 month of online locking. Status tracking is unlocked after establishing a secure portal password.",
-      "hindi": "sspy-up.gov.in पर जाएं, 'निराश्रित महिला पेंशन' पर क्लिक करें, 'ऑनलाइन आवेदन करें' चुनें और 'New Entry Form' भरें। विवरण भरकर सेव करें और 'Final Submit' करें। इसके बाद फॉर्म का प्रिंटआउट लेकर 1 महीने के भीतर जिला समाज कल्याण अधिकारी (DSWO) कार्यालय में जमा करें।"
+      "hindi": "sspy-up.gov.in पर जाएं, 'निराश्रित महिला पेंशन' पर क्लिक करें, 'ऑनलाइन आवेदन करें' चुनें और 'New Entry Form' भरें। विवरण भरकर सेव करें और 'Final Submit' करें। इसके बाद फॉर्म का प्रिंटआउट लेकर 1 महीने के भीतर जिला समाज कल्याण अधिकारी (DSWO) कार्यालय में जमा करें।",
+      "bhojpuri": "स्सपी-यूपी डॉट गोव डॉट इन पर जाला, 'निराश्रित महिला पेंशन' पर क्लिक करीं, 'ऑनलाइन आवेदन करें' चुनीं aur 'New Entry Form' भरीं। विवरण भरके सेव करीं aur 'Final Submit' करीं। ईके बाद फॉर्म का प्रिंटआउट लेके 1 महीना के भीतर जिला समाज कल्याण अधिकारी (DSWO) कार्यालय में जमा करीं।"
     },
     "age_limit": "No Age Ceiling (Lifted by government order)",
     "contribution_type": "Direct Social Welfare Direct Benefit Transfer (DBT)",
@@ -8456,19 +8520,23 @@
     },
     "benefits": {
       "english": "100% confidential anti-graft complaint handling, direct audio/video multimedia evidence upload pipelines, continuous real-time complaint status tracking, a time-bound enforcement protocol backed by automated reminders, and access to the dedicated 1076 helpline.",
-      "hindi": "शिकायतकर्ता की पहचान पूरी तरह से गुप्त रखने की गारंटी, ऑडियो/वीडियो सबूत अपलोड करने की सुविधा, शिकायत की स्थिति को ट्रैक करने और समय पर समाधान न होने पर रिमाइंडर भेजने का नियम।"
+      "hindi": "शिकायतकर्ता की पहचान पूरी तरह से गुप्त रखने की गारंटी, ऑडियो/वीडियो सबूत अपलोड करने की सुविधा, शिकायत की स्थिति को ट्रैक करने और समय पर समाधान न होने पर रिमाइंडर भेजने का नियम।",
+      "bhojpuri": "फरियादकर्ता के पहचान पूरा तरह से गुप्त रखे के गारंटी बा, ऑडियो/वीडियो सबूत अपलोड करे के सुविधा मिलेला, फरियाद के हालचाल के ट्रैक करे आ समय पर समाधान न होए पर रिमाइंडर भेजे के नियम बाड़न।"
     },
     "eligibility": {
       "english": "Any citizen of India residing in or dealing with administrative public offices within Uttar Pradesh who possesses evidence of corrupt acts by state government employees.",
-      "hindi": "उत्तर Pradesh का कोई भी नागरिक जिसके पास राज्य के सरकारी कर्मचारियों या अधिकारियों द्वारा किए गए भ्रष्टाचार का कोई सबूत (ऑडियो/वीडियो) हो।"
+      "hindi": "उत्तर Pradesh का कोई भी नागरिक जिसके पास राज्य के सरकारी कर्मचारियों या अधिकारियों द्वारा किए गए भ्रष्टाचार का कोई सबूत (ऑडियो/वीडियो) हो।",
+      "bhojpuri": "उत्तर प्रदेश के कौनो भी नागरिक जेकर पास राज्य के सरकारी कर्मचारी या अधिकारी लोगन द्वारा कइल गइल भ्रष्टाचार के कोई सबूत (ऑडियो/वीडियो) बा, ऊ UP Anti Corruption Portal (Jansunwai) पे अपलाई करीं सकेला।"
     },
     "documents_required": {
       "english": "Audio recordings, video files, or photographic evidence of the corrupt act, active mobile number or email ID for secure registration and OTP validation, and the system-generated unique Complaint Number for tracking.",
-      "hindi": "भ्रष्टाचार से संबंधित ऑडियो, वीडियो या फोटो सबूत, ओटीपी (OTP) सत्यापन के लिए सक्रिय मोबाइल नंबर या ईमेल आईडी।"
+      "hindi": "भ्रष्टाचार से संबंधित ऑडियो, वीडियो या फोटो सबूत, ओटीपी (OTP) सत्यापन के लिए सक्रिय मोबाइल नंबर या ईमेल आईडी।",
+      "bhojpuri": "भ्रष्टाचार से जुड़ल ऑडियो, वीडियो या फोटो के सबूत, ओटीपी (OTP) सत्यापन खातिर एक्टिव मोबाइल नंबर या ईमेल आईडी बा"
     },
     "application_process": {
       "english": "Visit jansunwai.up.nic.in, click on the green 'Anti Corruption Portal' button to launch the Complaint Registration Form. Authenticate via an OTP sent to your mobile or email, enter grievance text details, upload your multimedia evidence (photo/audio/video), and click submit to generate a tracking code. Track status via the 'Track Complaint Status' sub-page by inputting the complaint number alongside your contact parameters.",
-      "hindi": "jansunwai.up.nic.in पर जाएं, हरे रंग के 'Anti Corruption Portal' बटन पर क्लिक करें। मोबाइल नंबर या ईमेल पर प्राप्त ओटीपी के माध्यम से पंजीकरण करें, शिकायत दर्ज करें और अपना ऑडियो/वीडियो सबूत अपलोड करके सबमिट करें। 'Track Complaint Status' पर जाकर शिकायत संख्या डालकर प्रगति देख सकते हैं।"
+      "hindi": "jansunwai.up.nic.in पर जाएं, हरे रंग के 'Anti Corruption Portal' बटन पर क्लिक करें। मोबाइल नंबर या ईमेल पर प्राप्त ओटीपी के माध्यम से पंजीकरण करें, शिकायत दर्ज करें और अपना ऑडियो/वीडियो सबूत अपलोड करके सबमिट करें। 'Track Complaint Status' पर जाकर शिकायत संख्या डालकर प्रगति देख सकते हैं।",
+      "bhojpuri": "जansunwai.up.nic.in पे जाला आओ, हरे रंग के 'Anti Corruption Portal' बटन पे क्लिक करीं। मोबाइल नंबर या ईमेल पे मिलेला ओटीपी के माध्यम से पंजीकरण करीं, शिकायत दर्ज करीं आउर अपना ऑडियो/वीडियो सबूत अपलोड करके सबमिट करीं। 'Track Complaint Status' पे जाके शिकायत संख्या डालके प्रगति देखल जा सकेला।"
     },
     "age_limit": "Open to all citizens",
     "contribution_type": "E-Governance Anti-Graft & Civic Complaint System",
@@ -9437,19 +9505,23 @@
     },
     "benefits": {
       "english": "Free smartphones for communication and digital literacy. Additionally, workers are paid for contributing to the implementation of Pradhan Mantri Awas Yojana (PMAY).",
-      "hindi": "संचार और डिजिटल साक्षरता के लिए मुफ्त स्मार्टफोन। इसके अलावा, प्रधान मंत्री आवास योजना (PMAY) के कार्यान्वयन में योगदान के लिए भुगतान भी किया जाएगा।"
+      "hindi": "संचार और डिजिटल साक्षरता के लिए मुफ्त स्मार्टफोन। इसके अलावा, प्रधान मंत्री आवास योजना (PMAY) के कार्यान्वयन में योगदान के लिए भुगतान भी किया जाएगा।",
+      "bhojpuri": "संचार आउर डिजिटल साक्षरता खातिर मुफ्त स्मार्टफोन मिलेला। एकरे अलावा, प्रधान मंत्री आवास योजना (PMAY) के कार्यान्वयन में योगदान के लिए भी भुगतान दीहल जाई।"
     },
     "eligibility": {
       "english": "Must be a recognized Panchayat Swayam Sevak / Panchayat worker in Jharkhand.",
-      "hindi": "झारखंड में मान्यता प्राप्त पंचायत स्वयंसेवक या पंचायत कार्यकर्ता होना अनिवार्य है।"
+      "hindi": "झारखंड में मान्यता प्राप्त पंचायत स्वयंसेवक या पंचायत कार्यकर्ता होना अनिवार्य है।",
+      "bhojpuri": "झारखंड में मान्यता प्राप्त पंचायत स्वयंसेवक या पंचायत कार्यकर्ता होये के बा अनिवार्य।"
     },
     "documents_required": {
       "english": "Panchayat Worker ID / Appointment proof, Identity Card, Resident Proof.",
-      "hindi": "पंचायत कार्यकर्ता पहचान पत्र / नियुक्ति प्रमाण, पहचान पत्र, निवास प्रमाण पत्र।"
+      "hindi": "पंचायत कार्यकर्ता पहचान पत्र / नियुक्ति प्रमाण, पहचान पत्र, निवास प्रमाण पत्र।",
+      "bhojpuri": "पंचायत कार्यकर्ता के पहचान पत्र / नियुक्ति के प्रमाण, पहचान पत्र, निवास प्रमाण पत्र बाड़न।"
     },
     "application_process": {
       "english": "Managed through organized meets and local administration channels like 'Sarkar Aapke Dwar'.",
-      "hindi": "'सरकार आपके द्वार' जैसे आयोजित कार्यक्रमों और स्थानीय प्रशासन के माध्यम से प्रबंधित।"
+      "hindi": "'सरकार आपके द्वार' जैसे आयोजित कार्यक्रमों और स्थानीय प्रशासन के माध्यम से प्रबंधित।",
+      "bhojpuri": "'सरकार आपके द्वार' जैसन कार्यक्रम आओर स्थानीय प्रशासन के माध्यम से ई योजना के बा प्रबंधित करीं जाला।"
     },
     "age_limit": "As per Panchayat deployment rules",
     "contribution_type": "Free Device Distribution & Work Honorarium",
@@ -9476,19 +9548,23 @@
     },
     "benefits": {
       "english": "Allotment of Type 1 (300 sq. ft.) or Type 2 (700 sq. ft.) affordable urban houses.",
-      "hindi": "टाइप 1 (300 वर्ग फुट) या टाइप 2 (700 वर्ग फुट) के किफायती शहरी मकानों का आवंटन।"
+      "hindi": "टाइप 1 (300 वर्ग फुट) या टाइप 2 (700 वर्ग फुट) के किफायती शहरी मकानों का आवंटन।",
+      "bhojpuri": "टाइप 1 (300 वर्ग फुट) या टाइप 2 (700 वर्ग फुट) के सस्ता शहरी मकान के आवंटन बाड़न, जेकरा खातिर गरीब लोगन के फायदा मिलेला।"
     },
     "eligibility": {
       "english": "Must be a resident of Ranchi since at least 2015 with valid residential proof. Annual income limit: Up to ₹3 Lakh for Type 1 flats, and between ₹3 Lakh to ₹6 Lakh for Type 2 flats.",
-      "hindi": "कम से कम 2015 से रांची का निवासी होना चाहिए और वैध निवास प्रमाण होना चाहिए। वार्षिक आय सीमा: टाइप 1 फ्लैटों के लिए ₹3 लाख तक, और टाइप 2 फ्लैटों के लिए ₹3 से ₹6 लाख के बीच।"
+      "hindi": "कम से कम 2015 से रांची का निवासी होना चाहिए और वैध निवास प्रमाण होना चाहिए। वार्षिक आय सीमा: टाइप 1 फ्लैटों के लिए ₹3 लाख तक, और टाइप 2 फ्लैटों के लिए ₹3 से ₹6 लाख के बीच।",
+      "bhojpuri": "कम से कम 2015 से रांची के निवासी बाड़न त खातिर अपना वैध निवास प्रमाण बा जरूरी। एह स्कीम खातिर वार्षिक आय के सीम बा - टाइप 1 फ्लैट खातिर ₹3 लाख तक, आरू टाइप 2 फ्लैट खातिर ₹3 से ₹6 लाख के बीच।"
     },
     "documents_required": {
       "english": "Income Certificate, Residential Proof (Rental slips or government authorized proof), Identity Proof, PMAY Ranchi Demand Survey Application Form.",
-      "hindi": "आय प्रमाण पत्र, निवास प्रमाण (किराया पर्ची या सरकारी अधिकृत प्रमाण), पहचान पत्र, पीएमएवाई रांची डिमांड सर्वे आवेदन पत्र।"
+      "hindi": "आय प्रमाण पत्र, निवास प्रमाण (किराया पर्ची या सरकारी अधिकृत प्रमाण), पहचान पत्र, पीएमएवाई रांची डिमांड सर्वे आवेदन पत्र।",
+      "bhojpuri": "आय प्रमाण पत्र, निवास प्रमाण (किराया पर्ची या सरकारी अधिकृत प्रमाण), पहचान पत्र, पीएमएवाई रांची डिमांड सर्वे आवेदन पत्र बा जेकर जरूरत बाड़न पीएमएवाई खातिर, तो करीं अपना आवेदन, दीहल जाई पूरा सहायता रांची में।"
     },
     "application_process": {
       "english": "Download the demand survey application form from ranchimunicipal.com and submit it at the nearest RMC office, or apply online through pmaymis.gov.in.",
-      "hindi": "ranchimunicipal.com से डिमांड सर्वे आवेदन फॉर्म डाउनलोड करके नजदीकी RMC कार्यालय में जमा करें, या pmaymis.gov.in के माध्यम से ऑनलाइन आवेदन करें।"
+      "hindi": "ranchimunicipal.com से डिमांड सर्वे आवेदन फॉर्म डाउनलोड करके नजदीकी RMC कार्यालय में जमा करें, या pmaymis.gov.in के माध्यम से ऑनलाइन आवेदन करें।",
+      "bhojpuri": "राँची म्युनिसिपल कार्यालय के वेबसाइट ranchimunicipal.com से डिमांड सर्वे आवेदन फॉर्म डाउनलोड कर के अपने नजदीकी आरएमसी कार्यालय में जमा कर दीं, या फिर pmaymis.gov.in के माध्यम से ऑनलाइन आवेदन करीं।"
     },
     "age_limit": "Adult (18+ Years)",
     "contribution_type": "Affordable Housing Subsidized Allotment",
@@ -9515,19 +9591,23 @@
     },
     "benefits": {
       "english": "35 kg free rice packet delivered at the doorstep every month.",
-      "hindi": "हर महीने दरवाजे पर 35 किलो मुफ्त चावल का पैकेट।"
+      "hindi": "हर महीने दरवाजे पर 35 किलो मुफ्त चावल का पैकेट।",
+      "bhojpuri": "हर महीना दरवाजा पर 35 किलो फ्री चावल के पैकेट मिलेला।"
     },
     "eligibility": {
       "english": "Belong to one of the 8 categorized Primitive Tribal Groups (PTGs) in Jharkhand: Asur, Birhor, Paharia (Baiga), Sabar, Birajiya, Korwa, Mal Pahariya, or Souriya Paharia.",
-      "hindi": "झारखंड के 8 वर्गीकृत आदिम जनजाति समूहों (PTG) में से एक से होना चाहिए: असुर, बिरहोर, पहाड़िया (बैगा), सबर, बिराजिया, कोरवा, माल पहाड़िया, या सौरिया पहाड़िया।"
+      "hindi": "झारखंड के 8 वर्गीकृत आदिम जनजाति समूहों (PTG) में से एक से होना चाहिए: असुर, बिरहोर, पहाड़िया (बैगा), सबर, बिराजिया, कोरवा, माल पहाड़िया, या सौरिया पहाड़िया।",
+      "bhojpuri": "झारखंड के 8 वर्गीकृत आदिम जनजाति समूहों (PTG) में से एक से होखे के चाही, जइसे कि असुर, बिरहोर, पहाड़िया (बैगा), सबर, बिराजिया, कोरवा, माल पहाड़िया, या सौरिया पहाड़िया।"
     },
     "documents_required": {
       "english": "PTG Certificate / Tribal Status Proof, Ration Card / Identity Proof.",
-      "hindi": "पीटीजी प्रमाणपत्र / जनजातीय स्थिति प्रमाण, राशन कार्ड / पहचान प्रमाण।"
+      "hindi": "पीटीजी प्रमाणपत्र / जनजातीय स्थिति प्रमाण, राशन कार्ड / पहचान प्रमाण।",
+      "bhojpuri": "पीटीजी डाकिया योजना खातिर आवेदन करीं तो अपना पीटीजी प्रमाणपत्र, जनजातीय स्थिति प्रमाण, राशन कार्ड, आपन पहचान प्रमाण दीहल जाई।"
     },
     "application_process": {
       "english": "Initially launched in high concentration districts (Godda, Sahebganj, Palamu) and expanded state-wide. Managed internally by the Food and Civil Supplies Department alongside Women SHGs.",
-      "hindi": "शुरुआत में उच्च सांद्रता वाले जिलों (गोड्डा, साहेबगंज, पलामू) में शुरू किया गया और राज्य स्तर पर विस्तारित किया गया। खाद्य एवं नागरिक आपूर्ति विभाग और महिला स्वयं सहायता समूहों द्वारा प्रबंधित।"
+      "hindi": "शुरुआत में उच्च सांद्रता वाले जिलों (गोड्डा, साहेबगंज, पलामू) में शुरू किया गया और राज्य स्तर पर विस्तारित किया गया। खाद्य एवं नागरिक आपूर्ति विभाग और महिला स्वयं सहायता समूहों द्वारा प्रबंधित।",
+      "bhojpuri": "शुरुआत में गोड्डा, साहेबगंज, पलामू जिला में PTG Dakia Yojana शुरू कइल गइल बा आ राज्य स्तर पर विस्तारित कइल गइल बा। खाद्य एवं नागरिक आपूर्ति विभाग आ महिला स्वयं सहायता समूह के द्वारा ई योजना के प्रबंधन करीं जाला।"
     },
     "age_limit": "Family-level entitlement",
     "contribution_type": "Free Food Grain Distribution",
@@ -9554,19 +9634,23 @@
     },
     "benefits": {
       "english": "Welfare support for mothers and newborns; accommodation, skill development training, and education for orphan children in modern reform homes.",
-      "hindi": "माताओं और नवजात शिशुओं के लिए कल्याणकारी सहायता; आधुनिक सुधार गृहों में अनाथ बच्चों के लिए आवास, कौशल विकास प्रशिक्षण और शिक्षा।"
+      "hindi": "माताओं और नवजात शिशुओं के लिए कल्याणकारी सहायता; आधुनिक सुधार गृहों में अनाथ बच्चों के लिए आवास, कौशल विकास प्रशिक्षण और शिक्षा।",
+      "bhojpuri": "माई लोगन के खातिर आउर नवजात लइका लोगन के खातिर भलाई वाली मदद; आधुनिक सुधार गृहन में अनाथ लइका लोगन के खातिर आवास, कौशल बिकास के प्रशिक्षण आउर शिक्षा।"
     },
     "eligibility": {
       "english": "Mothers, newborn infants, or orphan/juvenile children residing in Jharkhand requiring rehabilitation.",
-      "hindi": "झारखंड में रहने वाली माताएं, नवजात शिशु, या अनाथ/किशोर बच्चे जिन्हें पुनर्वास की आवश्यकता है।"
+      "hindi": "झारखंड में रहने वाली माताएं, नवजात शिशु, या अनाथ/किशोर बच्चे जिन्हें पुनर्वास की आवश्यकता है।",
+      "bhojpuri": "झारखंड में रहे वाली माईंलोग, नवजात लइका, या अनाथ/किशोर लइका जेकरा पुनर्वास के जरूरत बा।"
     },
     "documents_required": {
       "english": "Orphan status verification by Panchayat Secretariat, Resident details, Birth details (where applicable).",
-      "hindi": "पंचायत सचिवालय द्वारा अनाथ स्थिति का सत्यापन, निवास विवरण, जन्म विवरण (जहां लागू हो)।"
+      "hindi": "पंचायत सचिवालय द्वारा अनाथ स्थिति का सत्यापन, निवास विवरण, जन्म विवरण (जहां लागू हो)।",
+      "bhojpuri": "पंचायत सचिवालय द्वारा अनाथ स्थिति के सत्यापन, निवास विवरण, जन्म विवरण (जहां लागू हो) बा । एही काम पंचायत सचिवालय खातिर बाड़न जो लइका अनाथ बाड़न।"
     },
     "application_process": {
       "english": "Panchayat Secretariat conducts field surveys to identify orphans and admits them to designated rehabilitation centers.",
-      "hindi": "पंचायत सचिवालय अनाथ बच्चों की पहचान के लिए सर्वेक्षण करता है और उन्हें निर्दिष्ट पुनर्वास केंद्रों में प्रवेश दिलाता।"
+      "hindi": "पंचायत सचिवालय अनाथ बच्चों की पहचान के लिए सर्वेक्षण करता है और उन्हें निर्दिष्ट पुनर्वास केंद्रों में प्रवेश दिलाता।",
+      "bhojpuri": "पंचायत सचिवालय अनाथ लइका के पहचान खातिर सर्वेक्षण करेला आ ऊहीं के निर्दिष्ट पुनर्वास केंद्रन में प्रवेश दिलावेला।"
     },
     "age_limit": "Newborns to Juveniles",
     "contribution_type": "Social Rehabilitation & Skill Training",
@@ -9593,19 +9677,23 @@
     },
     "benefits": {
       "english": "Free smartphone to support business digitization and financial inclusivity.",
-      "hindi": "व्यवसाय के डिजिटलीकरण और वित्तीय समावेश का समर्थन करने के लिए मुफ्त स्मार्टफोन।"
+      "hindi": "व्यवसाय के डिजिटलीकरण और वित्तीय समावेश का समर्थन करने के लिए मुफ्त स्मार्टफोन।",
+      "bhojpuri": "ब्यवसाय के डिजिटलीकरण आ वित्तीय समावेश के समर्थन खातिर मुफ्त स्मार्टफोन।"
     },
     "eligibility": {
       "english": "Must be a recognized woman entrepreneur or member of rural business groups in Jharkhand.",
-      "hindi": "झारखंड में एक मान्यता प्राप्त महिला उद्यमी या ग्रामीण व्यावसायिक समूहों की सदस्य होनी चाहिए।"
+      "hindi": "झारखंड में एक मान्यता प्राप्त महिला उद्यमी या ग्रामीण व्यावसायिक समूहों की सदस्य होनी चाहिए।",
+      "bhojpuri": "झारखंड में एगो मान्यता प्राप्त महिला उद्यमी या ग्रामीण व्यावसायिक समूहन के सदस्या बा खातिर ई योजना खातिर आवेदन करीं सकेला।"
     },
     "documents_required": {
       "english": "Business Registration/Self-Help Group membership proof, Identity Proof, Resident Certificate.",
-      "hindi": "व्यवसाय पंजीकरण/स्वयं सहायता समूह सदस्यता का प्रमाण, पहचान पत्र, निवास प्रमाण पत्र।"
+      "hindi": "व्यवसाय पंजीकरण/स्वयं सहायता समूह सदस्यता का प्रमाण, पहचान पत्र, निवास प्रमाण पत्र।",
+      "bhojpuri": "ब्यवसाय रजिस्ट्रेशन/आपसी सहायता समूह के सदस्यता का प्रमाण, पहचान पत्र, निवास प्रमाण पत्र बा ।"
     },
     "application_process": {
       "english": "Identified through rural development networks and self-help group entrepreneurial listings.",
-      "hindi": "ग्रामीण विकास नेटवर्क और स्वयं सहायता समूह के उद्यमशीलता लिस्टिंग के माध्यम से पहचान की जाती है।"
+      "hindi": "ग्रामीण विकास नेटवर्क और स्वयं सहायता समूह के उद्यमशीलता लिस्टिंग के माध्यम से पहचान की जाती है।",
+      "bhojpuri": "गाँव के विकास नेटवर्क आ स्वयं सहायता समूह के उद्यमशीलता लिस्टिंग के रास्ता से पहचान मिलेला।"
     },
     "age_limit": "Working Age Entrepreneurs",
     "contribution_type": "Free Device Distribution",
@@ -9632,19 +9720,23 @@
     },
     "benefits": {
       "english": "Free informal education, access to specialized skill development centers, and a direct bank transfer of ₹10,000 upon completion.",
-      "hindi": "मुफ्त अनौपचारिक शिक्षा, विशेष कौशल विकास केंद्रों तक पहुंच, और पूरा होने पर ₹10,000 का प्रत्यक्ष बैंक स्थानांतरण।"
+      "hindi": "मुफ्त अनौपचारिक शिक्षा, विशेष कौशल विकास केंद्रों तक पहुंच, और पूरा होने पर ₹10,000 का प्रत्यक्ष बैंक स्थानांतरण।",
+      "bhojpuri": "मुफ्त अनौपचारिक शिक्षा मिलेला, विशेष कौशल विकास केंद्रों तक पहुंच मिलेला, आरू पूरा हो जाए तऽ ₹10,000 का प्रत्यक्ष बैंक स्थानांतरण दीहल जाई।"
     },
     "eligibility": {
       "english": "Girls between the age group of 14 to 24 years residing in Jharkhand.",
-      "hindi": "झारखंड में रहने वाली 14 से 24 वर्ष की आयु वर्ग की लड़कियां।"
+      "hindi": "झारखंड में रहने वाली 14 से 24 वर्ष की आयु वर्ग की लड़कियां।",
+      "bhojpuri": "झारखंड में रहे वाली 14 से 24 साल के उमिर के लइकियाँ बा।"
     },
     "documents_required": {
       "english": "Age proof (Birth Certificate/School Certificate), Resident Certificate, Active Bank Savings Account Passbook.",
-      "hindi": "आयु प्रमाण पत्र (जन्म प्रमाण पत्र/स्कूल प्रमाण पत्र), निवास प्रमाण पत्र, सक्रिय बैंक बचत खाता पासबुक।"
+      "hindi": "आयु प्रमाण पत्र (जन्म प्रमाण पत्र/स्कूल प्रमाण पत्र), निवास प्रमाण पत्र, सक्रिय बैंक बचत खाता पासबुक।",
+      "bhojpuri": "आयु प्रमाण पत्र (जन्म प्रमाण पत्र/स्कूल प्रमाण पत्र), निवास प्रमाण पत्र, सक्रिय बैंक बचत खाता पासबुक बा जरूरी कागजात जे Tejaswini Yojana खातिर लगेला।"
     },
     "application_process": {
       "english": "Enrollment through local Tejaswini Kendra centers or designated block-level education/skill officers.",
-      "hindi": "स्थानीय तेजस्विनी केंद्रों या निर्दिष्ट ब्लॉक-स्तरीय शिक्षा/कौशल अधिकारियों के माध्यम से नामांकन।"
+      "hindi": "स्थानीय तेजस्विनी केंद्रों या निर्दिष्ट ब्लॉक-स्तरीय शिक्षा/कौशल अधिकारियों के माध्यम से नामांकन।",
+      "bhojpuri": "स्थानीय तेजस्विनी केंद्रन स या निर्दिष्ट ब्लॉक-स्तरीय शिक्षा/कौशल अधिकारियन के माध्यम से दाखिला मिलेला।"
     },
     "age_limit": "14 to 24 Years",
     "contribution_type": "Direct Benefit Transfer (DBT) & Educational Aid",
@@ -9671,19 +9763,23 @@
     },
     "benefits": {
       "english": "Financial assistance and credit linkages to set up small village industries.",
-      "hindi": "छोटे ग्रामीण उद्योग स्थापित करने के लिए वित्तीय सहायता और क्रेडिट लिंकेज।"
+      "hindi": "छोटे ग्रामीण उद्योग स्थापित करने के लिए वित्तीय सहायता और क्रेडिट लिंकेज।",
+      "bhojpuri": "छोटका गाँव के उद्योग लगावे खातिर आर्थिक सहायता आ क्रेडिट लिंकेज मिलेला।"
     },
     "eligibility": {
       "english": "Rural women residing in Jharkhand who form or are part of an eligible group of 15 members.",
-      "hindi": "झारखंड में रहने वाली ग्रामीण महिलाएं जो 15 सदस्यों का एक पात्र समूह बनाती हैं या उसका हिस्सा हैं।"
+      "hindi": "झारखंड में रहने वाली ग्रामीण महिलाएं जो 15 सदस्यों का एक पात्र समूह बनाती हैं या उसका हिस्सा हैं।",
+      "bhojpuri": "झारखंड में रहे वाली ग्रामीण महिला लोग जे 15 सदस्यों के एक पात्र समूह बनावे ला या ओकर हिस्सा बाड़ी."
     },
     "documents_required": {
       "english": "Group registration details, Member ID proofs, Resident proofs, Group Bank Account details.",
-      "hindi": "समूह पंजीकरण विवरण, सदस्य पहचान पत्र, निवास प्रमाण, समूह बैंक खाता विवरण।"
+      "hindi": "समूह पंजीकरण विवरण, सदस्य पहचान पत्र, निवास प्रमाण, समूह बैंक खाता विवरण।",
+      "bhojpuri": "समूह पंजीकरण के बारे में जानकारी, सदस्य के पहचान पत्र, घर के पता के प्रमाण, समूह के बैंक खाता के विवरण।"
     },
     "application_process": {
       "english": "Details to be formalized post official rollout through rural development blocks and Sakhi Mandal setups.",
-      "hindi": "ग्रामीण विकास ब्लॉक और सखी मंडल सेटअप के माध्यम से आधिकारिक रोलआउट के बाद विवरण स्पष्ट किए जाएंगे।"
+      "hindi": "ग्रामीण विकास ब्लॉक और सखी मंडल सेटअप के माध्यम से आधिकारिक रोलआउट के बाद विवरण स्पष्ट किए जाएंगे।",
+      "bhojpuri": "गाँव के विकास ब्लॉक आ सखी मंडल सेटअप के माध्यम से आधिकारिक रोलआउट के बाद विवरण स्पष्ट करीं दीहल जाई।"
     },
     "age_limit": "Adult Women (18+ Years)",
     "contribution_type": "Financial Assistance / Business Grant",
@@ -9710,19 +9806,23 @@
     },
     "benefits": {
       "english": "Subsidized energy-saving appliances. 3-year replacement warranty on bulbs/tubes and 2.5-year warranty on fans for technical issues via local distribution outlets.",
-      "hindi": "सब्सिडी वाले ऊर्जा-बचत उपकरण। स्थानीय वितरण आउटलेट के माध्यम से तकनीकी समस्याओं के लिए बल्ब/ट्यूब पर 3 साल की प्रतिस्थापन वारंटी और पंखों पर 2.5 साल की वारंटी।"
+      "hindi": "सब्सिडी वाले ऊर्जा-बचत उपकरण। स्थानीय वितरण आउटलेट के माध्यम से तकनीकी समस्याओं के लिए बल्ब/ट्यूब पर 3 साल की प्रतिस्थापन वारंटी और पंखों पर 2.5 साल की वारंटी।",
+      "bhojpuri": "सब्सिडी वाले ऊर्जा-बचत उपकरण। स्थानीय वितरण आउटलेट के माध्यम से तकनीकी समस्याओं खातिर बल्ब/ट्यूब पर 3 साल की प्रतिस्थापन वारंटी मिलेला आ  पंखों पर 2.5 साल की वारंटी मिलेला।"
     },
     "eligibility": {
       "english": "Available to all households and domestic consumers with electricity connections in Jharkhand.",
-      "hindi": "झारखंड में बिजली कनेक्शन वाले सभी घरों और घरेलू उपभोक्ताओं के लिए उपलब्ध।"
+      "hindi": "झारखंड में बिजली कनेक्शन वाले सभी घरों और घरेलू उपभोक्ताओं के लिए उपलब्ध।",
+      "bhojpuri": "झारखंड में बिजली कनेक्शन वाला सभी घर आ घरेलू उपभोक्ता खातिर UJALA Scheme बा ।"
     },
     "documents_required": {
       "english": "Electricity Bill copy, Identity Proof, Upfront Payment amount.",
-      "hindi": "बिजली बिल की प्रति, पहचान पत्र, अग्रिम भुगतान राशि।"
+      "hindi": "बिजली बिल की प्रति, पहचान पत्र, अग्रिम भुगतान राशि।",
+      "bhojpuri": "बिजली बिल के प्रति, पहचान पत्र, अग्रिम भुगतान राशि बाड़न जे खातिर UJALA Scheme में आवेदन करीं तो लागल बाड़न।"
     },
     "application_process": {
       "english": "Walk-in purchase from authorized EESL distribution outlets and designated centers operating across the state.",
-      "hindi": "राज्य भर में संचालित अधिकृत EESL वितरण आउटलेट्स और नामित केंद्रों से सीधे खरीदें।"
+      "hindi": "राज्य भर में संचालित अधिकृत EESL वितरण आउटलेट्स और नामित केंद्रों से सीधे खरीदें।",
+      "bhojpuri": "राज्य भर में संचालित अधिकृत EESL वितरण आउटलेट्स आ नामित केंद्रों से सीधे खरीद लेवे।"
     },
     "age_limit": "No age limit",
     "contribution_type": "Subsidized Appliance Distribution",
@@ -9749,19 +9849,23 @@
     },
     "benefits": {
       "english": "Free advanced agricultural technology training, exposure to Kissan Call Centers, guidance to grow advanced seeds, and livelihood generation within respective villages.",
-      "hindi": "मुफ्त उन्नत कृषि प्रौद्योगिकी प्रशिक्षण, किसान कॉल सेंटरों तक पहुंच, उन्नत बीज उगाने का मार्गदर्शन और संबंधित गांवों के भीतर आजीविका सृजन।"
+      "hindi": "मुफ्त उन्नत कृषि प्रौद्योगिकी प्रशिक्षण, किसान कॉल सेंटरों तक पहुंच, उन्नत बीज उगाने का मार्गदर्शन और संबंधित गांवों के भीतर आजीविका सृजन।",
+      "bhojpuri": "मुफ्त उन्नत कृषि प्रौद्योगिकी प्रशिक्षण मिलेला, किसान कॉल सेंटर तक पहुंच बाड़न, उन्नत बीज उगावे के मार्गदर्शन दीहल जाई, आपन गांव के भीतरे आजीविका सृजन खातिर ये सुविधा बा।"
     },
     "eligibility": {
       "english": "Rural youth residing in Jharkhand villages willing to engage full-time in agricultural practices.",
-      "hindi": "झारखंड के गांवों में रहने वाले ग्रामीण युवा जो कृषि गतिविधियों में पूर्णकालिक रूप से शामिल होने के इच्छुक हैं।"
+      "hindi": "झारखंड के गांवों में रहने वाले ग्रामीण युवा जो कृषि गतिविधियों में पूर्णकालिक रूप से शामिल होने के इच्छुक हैं।",
+      "bhojpuri": "झारखंड के गाँव में रहे वाला ग्रामीण जुवान जे कृषि गतिविधियों में पूर्णकालिक रूप से शामिल होए के इच्छुक बाड़न।"
     },
     "documents_required": {
       "english": "Resident Proof, Land Ownership/Lease details (if applicable), Identity Card, Educational/Skill basic details.",
-      "hindi": "निवास प्रमाण पत्र, भूमि स्वामित्व/पट्टा विवरण (यदि लागू हो), पहचान पत्र, शैक्षिक/कौशल बुनियादी विवरण।"
+      "hindi": "निवास प्रमाण पत्र, भूमि स्वामित्व/पट्टा विवरण (यदि लागू हो), पहचान पत्र, शैक्षिक/कौशल बुनियादी विवरण।",
+      "bhojpuri": "निवास प्रमाण पत्र, जमीन के मालिकाना/पट्टा के बारे में जानकारी (जे लागू होय), पहचान पत्र, पढ़ाई/कौशल के बुनियादी जानकारी।"
     },
     "application_process": {
       "english": "Selection of two youths per village managed via local ATMA centers and Krishi Vigyan Kendras.",
-      "hindi": "स्थानीय आत्मा (ATMA) केंद्रों और कृषि विज्ञान केंद्रों के माध्यम से प्रति गांव दो युवाओं का चयन प्रबंधित किया जाता है।"
+      "hindi": "स्थानीय आत्मा (ATMA) केंद्रों और कृषि विज्ञान केंद्रों के माध्यम से प्रति गांव दो युवाओं का चयन प्रबंधित किया जाता है।",
+      "bhojpuri": "स्थानीय आत्मा (ATMA) केंद्रन से आ कृषि विज्ञान केंद्रन से हर गांव में दू युवक के चुनाव के प्रबंध बाड़न, जेहसे खातिर दू लइका के चयन करीं जाला।"
     },
     "age_limit": "Youth (Typically 18-35 Years)",
     "contribution_type": "Skill Development & Agri-Incentivization",
@@ -9788,19 +9892,23 @@
     },
     "benefits": {
       "english": "Financial housing grant: ₹75,000 for hilly terrain houses and ₹70,000 for plain terrain houses, credited directly to the bank account in 3 installments.",
-      "hindi": "वित्तीय आवास अनुदान: पहाड़ी क्षेत्रों के मकानों के लिए ₹75,000 और मैदानी क्षेत्रों के मकानों के लिए ₹70,000, जो 3 किस्तों में सीधे बैंक खाते में जमा किए जाते हैं।"
+      "hindi": "वित्तीय आवास अनुदान: पहाड़ी क्षेत्रों के मकानों के लिए ₹75,000 और मैदानी क्षेत्रों के मकानों के लिए ₹70,000, जो 3 किस्तों में सीधे बैंक खाते में जमा किए जाते हैं।",
+      "bhojpuri": "आर्थिक आवास अनुदान: पहाड़ी इलाका के मकान खातिर ₹75,000 आ मैदानी इलाका के मकान खातिर ₹70,000 मिलेला, जे 3 किस्त में सीधे बैंक खाता में जमा हो जाला।"
     },
     "eligibility": {
       "english": "Must be a widow residing in rural or urban hilly/plain expanses of Jharkhand in need of a pucca home.",
-      "hindi": "झारखंड के ग्रामीण या शहरी पहाड़ी/मैदानी क्षेत्रों में रहने वाली विधवा होना चाहिए जिन्हें पक्के मकान की आवश्यकता है।"
+      "hindi": "झारखंड के ग्रामीण या शहरी पहाड़ी/मैदानी क्षेत्रों में रहने वाली विधवा होना चाहिए जिन्हें पक्के मकान की आवश्यकता है।",
+      "bhojpuri": "झारखंड के देसी या शहरी पहाड़ी/मैदानी इलाका में रहे वाली विधवा बाड़न जिनकर पक्का मकान खातिर जरूरत बा, ऊ लोगन के भिमराव अम्बेडकर आवास योजना मिलेला।"
     },
     "documents_required": {
       "english": "Death Certificate of Husband, Resident Certificate, Income Certificate / BPL status, Bank Account Passbook.",
-      "hindi": "पति का मृत्यु प्रमाण पत्र, निवास प्रमाण पत्र, आय प्रमाण पत्र / बीपीएल स्थिति, बैंक खाता पासबुक।"
+      "hindi": "पति का मृत्यु प्रमाण पत्र, निवास प्रमाण पत्र, आय प्रमाण पत्र / बीपीएल स्थिति, बैंक खाता पासबुक।",
+      "bhojpuri": "पति के मृत्यु प्रमाण पत्र, घर के निवास प्रमाण पत्र, आमदनी प्रमाण पत्र / बीपीएल स्थिति, बैंक खाता के पासबुक।"
     },
     "application_process": {
       "english": "Applications are processed through local blocks or rural development authorities for unit tracking and direct bank verification.",
-      "hindi": "इकाई ट्रैकिंग और प्रत्यक्ष बैंक सत्यापन के लिए स्थानीय ब्लॉकों या ग्रामीण विकास अधिकारियों के माध्यम से आवेदनों पर कार्रवाई की जाती है।"
+      "hindi": "इकाई ट्रैकिंग और प्रत्यक्ष बैंक सत्यापन के लिए स्थानीय ब्लॉकों या ग्रामीण विकास अधिकारियों के माध्यम से आवेदनों पर कार्रवाई की जाती है।",
+      "bhojpuri": "इकाई ट्रैकिंग आ प्रत्यक्ष बैंक सत्यापन खातिर स्थानीय ब्लॉक या ग्रामीण विकास अधिकारियों के माध्यम से आवेदनों पर कार्रवाई करीं जाला।"
     },
     "age_limit": "No upper age limit",
     "contribution_type": "Direct Benefit Transfer (DBT) Housing Subsidy",
@@ -9827,19 +9935,23 @@
     },
     "benefits": {
       "english": "Subsidized urban housing, extended interest subsidy on home loans for MIG applicants, and the ability to edit or track application status online.",
-      "hindi": "सब्सिडी वाला शहरी आवास, एमआईजी आवेदकों के लिए होम लोन पर बढ़ी हुई ब्याज सब्सिडी, और ऑनलाइन आवेदन की स्थिति को बदलने या ट्रैक करने की सुविधा।"
+      "hindi": "सब्सिडी वाला शहरी आवास, एमआईजी आवेदकों के लिए होम लोन पर बढ़ी हुई ब्याज सब्सिडी, और ऑनलाइन आवेदन की स्थिति को बदलने या ट्रैक करने की सुविधा।",
+      "bhojpuri": "सब्सिडी वाला शहरी आवास, एमआईजी आवेदकन के लिए होम लोन पर बढ़ी हुई ब्याज सब्सिडी मिलेला, आरू ऑनलाइन आवेदन के स्थिति के बदलाव या ट्रैकिंग करीं के सुविधा बा ।"
     },
     "eligibility": {
       "english": "Must be an eligible urban poor citizen or slum dweller included in the PMAY beneficiary assessment list. Possession of a valid identity proof is mandatory for online registration.",
-      "hindi": "आवेदक को पीएमएवाई लाभार्थी मूल्यांकन सूची में शामिल एक पात्र शहरी गरीब नागरिक या झुग्गी निवासी होना चाहिए। ऑनलाइन पंजीकरण के लिए वैध पहचान प्रमाण होना अनिवार्य है।"
+      "hindi": "आवेदक को पीएमएवाई लाभार्थी मूल्यांकन सूची में शामिल एक पात्र शहरी गरीब नागरिक या झुग्गी निवासी होना चाहिए। ऑनलाइन पंजीकरण के लिए वैध पहचान प्रमाण होना अनिवार्य है।",
+      "bhojpuri": "आवेदक खातिर पीएमएवाई लाभार्थी मूल्यांकन सूची में शामिल एक पात्र शहरी गरीब नागरिक या झुग्गी निवासी बाड़न। ऑनलाइन पंजीकरण करीं खातिर वैध पहचान प्रमाण मिलेला बा।"
     },
     "documents_required": {
       "english": "Aadhaar Card / Virtual ID, Personal details, Contact details, Current residential address, Savings Bank Account details, Household income details.",
-      "hindi": "आधार कार्ड / वर्चुअल आईडी, व्यक्तिगत विवरण, संपर्क विवरण, वर्तमान आवासीय पता, बचत बैंक खाते का विवरण, घरेलू आय का विवरण।"
+      "hindi": "आधार कार्ड / वर्चुअल आईडी, व्यक्तिगत विवरण, संपर्क विवरण, वर्तमान आवासीय पता, बचत बैंक खाते का विवरण, घरेलू आय का विवरण।",
+      "bhojpuri": "आधार कार्ड / वर्चुअल आईडी, अपना व्यक्तिगत बाता, संपर्क बाता, वर्तमान घर का पता, बचत बैंक खाता के बारे में बाता, आपन घर के आय के बारे में बाता।"
     },
     "application_process": {
       "english": "Apply online through pmaymis.gov.in under 'Citizen Assessment' by selecting either 'For Slum Dwellers' or 'Benefits under other 3 Components'. Verify registration using the identity details, fill out the form, click the acknowledgment checkbox, and save. Alternatively, applications can be submitted through Common Service Centers (CSCs).",
-      "hindi": "pmaymis.gov.in पर जाकर 'सिटिजन असेसमेंट' मेनू के तहत 'फॉर स्लम ड्वेलर्स' या 'बेनिफिट्स अंडर अदर 3 कम्पोनेंट्स' में से किसी एक को चुनकर ऑनलाइन आवेदन करें। पहचान विवरण का उपयोग करके पंजीकरण सत्यापित करें, फॉर्म भरें, चेकबॉक्स पर टिक करें और सेव करें। इसके अलावा, कॉमन सर्विस सेंटर्स (CSC) के माध्यम से भी आवेदन किया जा सकता है।"
+      "hindi": "pmaymis.gov.in पर जाकर 'सिटिजन असेसमेंट' मेनू के तहत 'फॉर स्लम ड्वेलर्स' या 'बेनिफिट्स अंडर अदर 3 कम्पोनेंट्स' में से किसी एक को चुनकर ऑनलाइन आवेदन करें। पहचान विवरण का उपयोग करके पंजीकरण सत्यापित करें, फॉर्म भरें, चेकबॉक्स पर टिक करें और सेव करें। इसके अलावा, कॉमन सर्विस सेंटर्स (CSC) के माध्यम से भी आवेदन किया जा सकता है।",
+      "bhojpuri": "pmaymis.gov.in पर जाला आओ, 'सिटिजन असेसमेंट' मेनू के अंतर्गत 'फॉर स्लम ड्वेलर्स' या 'बेनिफिट्स अंडर अदर 3 कम्पोनेंट्स' में से कोई एक चुनी लेईके ऑनलाइन आवेदन करीं। पहचान विवरण के उपयोग से पंजीकरण के सत्यापन करीं, फॉर्म भरीं, चेकबॉक्स पर टिक करीं आओ, आउर सेव करीं। एही से अलावा, कॉमन सर्विस सेंटर्स (CSC) के माध्यम से भी आवेदन करीं सकेला।"
     },
     "age_limit": "Adults (18+ Years)",
     "contribution_type": "Subsidized Housing Assistance & Credit Linked Interest Subsidy",
@@ -9868,19 +9980,23 @@
     },
     "benefits": {
       "english": "Financial assistance of ₹1,20,000 (plain areas) or ₹1,30,000 (hilly/eastern/IAP areas), plus ₹12,000 for toilet construction under Swachh Bharat Mission, and up to 90-95 days of daily wages (₹18,000) through MGNREGA. Total assistance reaches ₹1,50,000 to ₹1,60,000. Beneficiaries can also access home loans up to ₹70,000 from nationalized banks.",
-      "hindi": "मैदानी क्षेत्रों में ₹1,20,000 या पहाड़ी/पूर्वी/आईएपी क्षेत्रों में ₹1,30,000 की वित्तीय सहायता। इसके साथ स्वच्छ भारत मिशन के तहत शौचालय निर्माण के लिए ₹12,000 और मनरेगा (MGNREGA) के माध्यम से 90-95 दिनों की दैनिक मजदूरी (₹18,000) दी जाती है। कुल सहायता ₹1,50,000 से ₹1,60,000 तक पहुंचती है। लाभार्थी राष्ट्रीयकृत बैंकों से ₹70,000 तक का ऋण भी ले सकते हैं।"
+      "hindi": "मैदानी क्षेत्रों में ₹1,20,000 या पहाड़ी/पूर्वी/आईएपी क्षेत्रों में ₹1,30,000 की वित्तीय सहायता। इसके साथ स्वच्छ भारत मिशन के तहत शौचालय निर्माण के लिए ₹12,000 और मनरेगा (MGNREGA) के माध्यम से 90-95 दिनों की दैनिक मजदूरी (₹18,000) दी जाती है। कुल सहायता ₹1,50,000 से ₹1,60,000 तक पहुंचती है। लाभार्थी राष्ट्रीयकृत बैंकों से ₹70,000 तक का ऋण भी ले सकते हैं।",
+      "bhojpuri": "मैदानी इलाका में ₹1,20,000 या पहाड़ी/पूर्वी/आईएपी इलाका में ₹1,30,000 की आर्थिक सहायता मिलेला। एकरा साथे स्वच्छ भारत मिशन के तहत शौचालय बनावे खातिर ₹12,000 आरू मनरेगा (MGNREGA) के माध्यम से 90-95 दिन की दैनिक मजदूरी (₹18,000) दीहल जाई। कुल सहायता ₹1,50,000 से ₹1,60,000 तक जाला। लाभार्थी राष्ट्रीयकृत बैंक से ₹70,000 तक का ऋण ले सकेला।"
     },
     "eligibility": {
       "english": "Poor and Below Poverty Line (BPL) families living in rural areas across India (except Delhi and Chandigarh), identified via the Socio-Economic Caste Census (SECC-2011) deprivation data.",
-      "hindi": "भारत के ग्रामीण क्षेत्रों (दिल्ली और चंडीगढ़ को छोड़कर) में रहने वाले गरीब और गरीबी रेखा से नीचे (BPL) के परिवार, जिनकी पहचान सामाजिक-आर्थिक जाति जनगणना (SECC-2011) के अभाव डेटा के माध्यम से की गई हो।"
+      "hindi": "भारत के ग्रामीण क्षेत्रों (दिल्ली और चंडीगढ़ को छोड़कर) में रहने वाले गरीब और गरीबी रेखा से नीचे (BPL) के परिवार, जिनकी पहचान सामाजिक-आर्थिक जाति जनगणना (SECC-2011) के अभाव डेटा के माध्यम से की गई हो।",
+      "bhojpuri": "भारत के गाँव के इलाका (दिल्ली आ चंडीगढ़ के छोड़ के) में रहे वाला गरीब आ बीपीएल परिवार, जेकर पहचान सामाजिक-आर्थिक जाति जनगणना (SECC-2011) के अभाव डेटा के माध्यम से होइल बा, ओही परिवार के Pradhan Mantri Awas Yojana - Gramin (PMAY-G) खातिर मिलेला।"
     },
     "documents_required": {
       "english": "Identity Proof, SECC-2011 Registered details, Bank Passbook, MGNREGA Job Card details, Aadhaar Card / Virtual ID.",
-      "hindi": "पहचान पत्र, एसईसीसी-2011 पंजीकृत विवरण, बैंक पासबुक, मनरेगा जॉब कार्ड का विवरण, आधार कार्ड / वर्चुअल आईडी।"
+      "hindi": "पहचान पत्र, एसईसीसी-2011 पंजीकृत विवरण, बैंक पासबुक, मनरेगा जॉब कार्ड का विवरण, आधार कार्ड / वर्चुअल आईडी।",
+      "bhojpuri": "पहिचान पत्र, एसईसीसी-2011 रजिस्टर्ड विवरण, बैंक पासबुक, मनरेगा जॉब कार्ड का विवरण, आधार कार्ड / वर्चुअल आईडी।"
     },
     "application_process": {
       "english": "Beneficiary profiling and shortlisting are done automatically based on SECC-2011 data. Shortlisted individuals can check application status, release of funds, and submit construction milestones using the AwaasApp or via the official web portal http://iay.nic.in.",
-      "hindi": "लाभार्थियों की प्रोफाइलिंग और शॉर्टलिस्टिंग स्वचालित रूप से एसईसीसी-2011 डेटा के आधार पर की जाती है। शॉर्टलिस्ट किए गए लोग 'आवास ऐप' (AwaasApp) का उपयोग करके या आधिकारिक वेब पोर्टल http://iay.nic.in के माध्यम से आवेदन की स्थिति, फंड जारी होने की जानकारी देख सकते हैं और निर्माण कार्य की प्रगति साझा कर सकते हैं।"
+      "hindi": "लाभार्थियों की प्रोफाइलिंग और शॉर्टलिस्टिंग स्वचालित रूप से एसईसीसी-2011 डेटा के आधार पर की जाती है। शॉर्टलिस्ट किए गए लोग 'आवास ऐप' (AwaasApp) का उपयोग करके या आधिकारिक वेब पोर्टल http://iay.nic.in के माध्यम से आवेदन की स्थिति, फंड जारी होने की जानकारी देख सकते हैं और निर्माण कार्य की प्रगति साझा कर सकते हैं।",
+      "bhojpuri": "लाभार्थी लोगन के प्रोफाइलिंग आ शॉर्टलिस्टिंग स्वचालित रूप से एसईसीसी-2011 डेटा के आधार पर हो जाला. शॉर्टलिस्ट कइल गइल लोग 'आवास ऐप' (AwaasApp) के उपयोग करके या आधिकारिक वेब पोर्टल http://iay.nic.in के माध्यम से आवेदन के स्थिति, फंड जारी होए के जानकारी देख सकत बाड़न आ निर्माण कार्य के प्रगति साझा कर सकत बाड़न."
     },
     "age_limit": "Adults (18+ Years)",
     "contribution_type": "Direct Financial Grant, Labor Subsidy & Subsidized Institutional Credit",

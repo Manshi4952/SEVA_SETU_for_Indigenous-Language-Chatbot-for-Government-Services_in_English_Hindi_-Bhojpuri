@@ -1,46 +1,50 @@
-# SevaSetu – requirements.txt
+# ============================================================
+# SevaSetu Backend – Environment Dependencies
 # Install: pip install -r requirements.txt
+# ============================================================
 
-# Web framework
+# -- Web Framework --
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
 pydantic==2.7.1
 pydantic-settings==2.2.1
 python-multipart==0.0.9
 
-# Auth
+# -- Auth & Security --
 python-jose[cryptography]==3.3.0
 bcrypt==4.0.1
 
-# Database
+# -- Database --
 sqlalchemy==2.0.30
 alembic==1.13.1
 
-# Language detection
+# -- Language Detection --
 langdetect==1.0.9
 
-# Voice
+# -- Voice Pipeline --
 gTTS==2.5.1
 SpeechRecognition==3.10.3
-pydub
+pydub==0.25.1
 
-# HTTP / utils
+# -- HTTP / System Utilities --
 python-dotenv==1.0.1
 httpx==0.27.0
 numpy==1.26.4
 aiofiles==23.2.1
 email-validator==2.1.1
 
-# AI Pipeline
+# -- Local AI Pipeline & Fine-Tuned Model Support --
 click>=7.1.2,<8.2.0
 typer>=0.9.0,<0.13.0
-huggingface-hub>=0.20.0,<0.24.0
-transformers>=4.40.0,<4.45.0
+huggingface-hub>=0.23.0
+transformers>=4.43.0
+peft==0.12.0
+accelerate==0.33.0
 faiss-cpu
 
-# === LLM Provider: Groq ===
+# -- Cloud LLM Provider: Groq (Fallback) --
 groq>=0.9.0
 
-# Testing
+# -- Testing --
 pytest==8.2.1
 pytest-asyncio==0.23.6

@@ -1,0 +1,14 @@
+[
+  {
+    "query": "Bihar Student Credit Card me kitna paisa milta hai?",
+    "ground_truth": "The Bihar Student Credit Card Scheme provides an interest-free education loan of up to Rs. 4,00,000 (4 Lakhs) to students pursuing higher education."
+  },
+  {
+    "query": "वृद्धजन पेंशन में कितना पैसा मिलता है?",
+    "ground_truth": "मुख्यमंत्री वृद्धजन पेंशन योजना के तहत बिहार के 60 वर्ष से अधिक आयु के वरिष्ठ नागरिकों को ₹400 प्रति माह की आर्थिक सहायता सीधे उनके बैंक खाते में दी जाती है।"
+  },
+  {
+    "query": "PMAY आवास योजना का बा?",
+    "ground_truth": "प्रधानमंत्री आवास योजना ग्रामीण (PMAY-G) बिहार के तहत मैदानी इलाकों में घर बनाने के लिए ₹1.20 lakh और पहाड़ी इलाकों में ₹1.30 lakh की सहायता दी जाती है।"
+  }
+]
